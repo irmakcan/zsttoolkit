@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		52EA50C6D36140DBABE1AFEB /* libPods-ZSTToolkitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0775BC94BF194213AD1D0B19 /* libPods-ZSTToolkitTests.a */; };
+		BA8463BE192E9E8900622332 /* Warnings.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BA8463BD192E9E8900622332 /* Warnings.xcconfig */; };
 		BAD1DB2A192D35B100DF8FCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD1DB29192D35B100DF8FCE /* Foundation.framework */; };
 		BAD1DB2C192D35B100DF8FCE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD1DB2B192D35B100DF8FCE /* CoreGraphics.framework */; };
 		BAD1DB2E192D35B100DF8FCE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD1DB2D192D35B100DF8FCE /* UIKit.framework */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		0775BC94BF194213AD1D0B19 /* libPods-ZSTToolkitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZSTToolkitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA8463BD192E9E8900622332 /* Warnings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
 		BAD1DB26192D35B100DF8FCE /* ZSTToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSTToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD1DB29192D35B100DF8FCE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BAD1DB2B192D35B100DF8FCE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -128,6 +130,7 @@
 		BAD1DB30192D35B100DF8FCE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BA8463BD192E9E8900622332 /* Warnings.xcconfig */,
 				BAD1DB31192D35B100DF8FCE /* ZSTToolkit-Info.plist */,
 				BAD1DB32192D35B100DF8FCE /* InfoPlist.strings */,
 				BAD1DB35192D35B100DF8FCE /* main.m */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAD1DB4D192D35B200DF8FCE /* InfoPlist.strings in Resources */,
+				BA8463BE192E9E8900622332 /* Warnings.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +441,7 @@
 		};
 		BAD1DB53192D35B200DF8FCE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA8463BD192E9E8900622332 /* Warnings.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
