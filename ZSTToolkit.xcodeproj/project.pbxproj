@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52EA50C6D36140DBABE1AFEB /* libPods-ZSTToolkitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0775BC94BF194213AD1D0B19 /* libPods-ZSTToolkitTests.a */; };
 		BAD1DB2A192D35B100DF8FCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD1DB29192D35B100DF8FCE /* Foundation.framework */; };
 		BAD1DB2C192D35B100DF8FCE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD1DB2B192D35B100DF8FCE /* CoreGraphics.framework */; };
 		BAD1DB2E192D35B100DF8FCE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD1DB2D192D35B100DF8FCE /* UIKit.framework */; };
@@ -18,7 +19,8 @@
 		BAD1DB44192D35B200DF8FCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD1DB29192D35B100DF8FCE /* Foundation.framework */; };
 		BAD1DB45192D35B200DF8FCE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD1DB2D192D35B100DF8FCE /* UIKit.framework */; };
 		BAD1DB4D192D35B200DF8FCE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAD1DB4B192D35B200DF8FCE /* InfoPlist.strings */; };
-		BAD1DB4F192D35B200DF8FCE /* ZSTToolkitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD1DB4E192D35B200DF8FCE /* ZSTToolkitTests.m */; };
+		BAD1DB5C192D53A400DF8FCE /* NSDictionary+ZSTKeyValueExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD1DB5B192D53A400DF8FCE /* NSDictionary+ZSTKeyValueExtensions.m */; };
+		BAD1DB5E192DDA0800DF8FCE /* ZSTDictionaryKeyValueExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD1DB5D192DDA0800DF8FCE /* ZSTDictionaryKeyValueExtensionsSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0775BC94BF194213AD1D0B19 /* libPods-ZSTToolkitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZSTToolkitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD1DB26192D35B100DF8FCE /* ZSTToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSTToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD1DB29192D35B100DF8FCE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BAD1DB2B192D35B100DF8FCE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -47,7 +50,10 @@
 		BAD1DB42192D35B200DF8FCE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		BAD1DB4A192D35B200DF8FCE /* ZSTToolkitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZSTToolkitTests-Info.plist"; sourceTree = "<group>"; };
 		BAD1DB4C192D35B200DF8FCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BAD1DB4E192D35B200DF8FCE /* ZSTToolkitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSTToolkitTests.m; sourceTree = "<group>"; };
+		BAD1DB5A192D53A400DF8FCE /* NSDictionary+ZSTKeyValueExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ZSTKeyValueExtensions.h"; sourceTree = "<group>"; };
+		BAD1DB5B192D53A400DF8FCE /* NSDictionary+ZSTKeyValueExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ZSTKeyValueExtensions.m"; sourceTree = "<group>"; };
+		BAD1DB5D192DDA0800DF8FCE /* ZSTDictionaryKeyValueExtensionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTDictionaryKeyValueExtensionsSpec.m; sourceTree = "<group>"; };
+		C6E8D366A5F04C969C2BCF16 /* Pods-ZSTToolkitTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZSTToolkitTests.xcconfig"; path = "Pods/Pods-ZSTToolkitTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 				BAD1DB43192D35B200DF8FCE /* XCTest.framework in Frameworks */,
 				BAD1DB45192D35B200DF8FCE /* UIKit.framework in Frameworks */,
 				BAD1DB44192D35B200DF8FCE /* Foundation.framework in Frameworks */,
+				52EA50C6D36140DBABE1AFEB /* libPods-ZSTToolkitTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +89,7 @@
 				BAD1DB48192D35B200DF8FCE /* ZSTToolkitTests */,
 				BAD1DB28192D35B100DF8FCE /* Frameworks */,
 				BAD1DB27192D35B100DF8FCE /* Products */,
+				C6E8D366A5F04C969C2BCF16 /* Pods-ZSTToolkitTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +109,7 @@
 				BAD1DB2B192D35B100DF8FCE /* CoreGraphics.framework */,
 				BAD1DB2D192D35B100DF8FCE /* UIKit.framework */,
 				BAD1DB42192D35B200DF8FCE /* XCTest.framework */,
+				0775BC94BF194213AD1D0B19 /* libPods-ZSTToolkitTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,8 +139,8 @@
 		BAD1DB48192D35B200DF8FCE /* ZSTToolkitTests */ = {
 			isa = PBXGroup;
 			children = (
-				BAD1DB4E192D35B200DF8FCE /* ZSTToolkitTests.m */,
 				BAD1DB49192D35B200DF8FCE /* Supporting Files */,
+				BAD1DB5D192DDA0800DF8FCE /* ZSTDictionaryKeyValueExtensionsSpec.m */,
 			);
 			path = ZSTToolkitTests;
 			sourceTree = "<group>";
@@ -148,8 +157,18 @@
 		BAD1DB58192D3EDA00DF8FCE /* ZSTToolkit */ = {
 			isa = PBXGroup;
 			children = (
+				BAD1DB59192D535A00DF8FCE /* Categories */,
 			);
 			path = ZSTToolkit;
+			sourceTree = "<group>";
+		};
+		BAD1DB59192D535A00DF8FCE /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				BAD1DB5A192D53A400DF8FCE /* NSDictionary+ZSTKeyValueExtensions.h */,
+				BAD1DB5B192D53A400DF8FCE /* NSDictionary+ZSTKeyValueExtensions.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,9 +195,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAD1DB55192D35B200DF8FCE /* Build configuration list for PBXNativeTarget "ZSTToolkitTests" */;
 			buildPhases = (
+				F3F94B45A3F84011870ECBC2 /* Check Pods Manifest.lock */,
 				BAD1DB3D192D35B200DF8FCE /* Sources */,
 				BAD1DB3E192D35B200DF8FCE /* Frameworks */,
 				BAD1DB3F192D35B200DF8FCE /* Resources */,
+				D4DA85A9C9FC4993A9BA6573 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,11 +264,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D4DA85A9C9FC4993A9BA6573 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ZSTToolkitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3F94B45A3F84011870ECBC2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BAD1DB22192D35B100DF8FCE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAD1DB5C192D53A400DF8FCE /* NSDictionary+ZSTKeyValueExtensions.m in Sources */,
 				BAD1DB3A192D35B100DF8FCE /* ZSTAppDelegate.m in Sources */,
 				BAD1DB36192D35B100DF8FCE /* main.m in Sources */,
 			);
@@ -257,7 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAD1DB4F192D35B200DF8FCE /* ZSTToolkitTests.m in Sources */,
+				BAD1DB5E192DDA0800DF8FCE /* ZSTDictionaryKeyValueExtensionsSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +446,7 @@
 		};
 		BAD1DB56192D35B200DF8FCE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6E8D366A5F04C969C2BCF16 /* Pods-ZSTToolkitTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZSTToolkit.app/ZSTToolkit";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -413,6 +469,7 @@
 		};
 		BAD1DB57192D35B200DF8FCE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6E8D366A5F04C969C2BCF16 /* Pods-ZSTToolkitTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZSTToolkit.app/ZSTToolkit";
 				FRAMEWORK_SEARCH_PATHS = (
