@@ -7,151 +7,171 @@
 //
 
 #import "NSDictionary+ZSTKeyValueExtensions.h"
+#import "ZSTJSONObjectInitializationProtocol.h"
 
 @implementation NSDictionary (ZSTKeyValueExtensions)
 
 #pragma mark - ObjC primitive helpers
 - (NSInteger)integerForKey:(id)key defaultValue:(NSInteger)defaultValue
 {
-    id value = [self objectForKey:key];
-    if ([value respondsToSelector:@selector(integerValue)]) {
-        return [value integerValue];
+  id value = [self objectForKey:key];
+  if ([value isKindOfClass:[NSString class]]) {
+    NSInteger scanResult;
+    NSScanner *scanner = [NSScanner scannerWithString:value];
+    BOOL success = [scanner scanInteger:&scanResult];
+    
+    if (success && [scanner isAtEnd]) {
+      return scanResult;
     }
-    return defaultValue;
+  } else if ([value respondsToSelector:@selector(integerValue)]) {
+    return [value integerValue];
+  }
+  return defaultValue;
 }
 
-- (NSInteger)integerForKey:(NSString *)key
+- (NSInteger)integerForKey:(id)key
 {
-    return [self integerForKey:key defaultValue:0];
+  return [self integerForKey:key defaultValue:0];
 }
 
 - (NSUInteger)unsignedIntegerForKey:(id)key defaultValue:(NSUInteger)defaultValue
 {
 	id value = [self objectForKey:key];
-	if ([value respondsToSelector:@selector(unsignedIntegerValue)]) {
+  
+  if ([value isKindOfClass:[NSString class]]) {
+    unsigned long long scanResult;
+    NSScanner *scanner = [NSScanner scannerWithString:value];
+    BOOL success = [scanner scanUnsignedLongLong:&scanResult];
+    
+    if (success && [scanner isAtEnd]) {
+      NSUInteger result;
+      if (scanResult > NSUIntegerMax) {
+        result = NSUIntegerMax;
+      } else {
+        result = (NSUInteger)scanResult;
+      }
+      return result;
+    }
+  } else if ([value respondsToSelector:@selector(unsignedIntegerValue)]) {
 		return [value unsignedIntegerValue];
 	}
-    return defaultValue;
+  return defaultValue;
 }
 
 - (NSUInteger)unsignedIntegerForKey:(id)key
 {
-    return [self unsignedIntegerForKey:key defaultValue:0];
+  return [self unsignedIntegerForKey:key defaultValue:0];
 }
 
 - (BOOL)boolForKey:(id)key defaultValue:(BOOL)defaultValue
 {
-    id value = [self objectForKey:key];
-    if ([value respondsToSelector:@selector(boolValue)]) {
-        return [value boolValue];
-    }
-    return defaultValue;
+  id value = [self objectForKey:key];
+  if ([value respondsToSelector:@selector(boolValue)]) {
+    return [value boolValue];
+  }
+  return defaultValue;
 }
 
 - (BOOL)boolForKey:(id)key
 {
-    return [self boolForKey:key defaultValue:NO];
+  return [self boolForKey:key defaultValue:NO];
 }
 
 #pragma mark - Primitive helpers
-- (int)intForKey:(id)key defaultValue:(int)defaultValue
-{
-    id value = [self objectForKey:key];
-    if ([value respondsToSelector:@selector(intValue)]) {
-        return [value intValue];
-    }
-    return defaultValue;
-    
-}
-
-- (int)intForKey:(id)key
-{
-    return [self intForKey:key defaultValue:0];
-}
 
 - (float)floatForKey:(id)key defaultValue:(float)defaultValue
 {
-    id value = [self objectForKey:key];
-    if ([value respondsToSelector:@selector(floatValue)]) {
-        return [value floatValue];
+  id value = [self objectForKey:key];
+  if ([value isKindOfClass:[NSString class]]) {
+    float scanResult;
+    NSScanner *scanner = [NSScanner scannerWithString:value];
+    BOOL success = [scanner scanFloat:&scanResult];
+    
+    if (success && [scanner isAtEnd]) {
+      return scanResult;
     }
-    return defaultValue;
+  } else if ([value respondsToSelector:@selector(floatValue)]) {
+    return [value floatValue];
+  }
+  return defaultValue;
 }
 
 - (float)floatForKey:(id)key
 {
-    return [self floatForKey:key defaultValue:0.0f];
+  return [self floatForKey:key defaultValue:0.0f];
 }
 
 - (double)doubleForKey:(id)key defaultValue:(double)defaultValue
 {
-    id value = [self objectForKey:key];
-    if ([value respondsToSelector:@selector(doubleValue)]) {
-        return [value doubleValue];
+  id value = [self objectForKey:key];
+  if ([value isKindOfClass:[NSString class]]) {
+    double scanResult;
+    NSScanner *scanner = [NSScanner scannerWithString:value];
+    BOOL success = [scanner scanDouble:&scanResult];
+    
+    if (success && [scanner isAtEnd]) {
+      return scanResult;
     }
-    return defaultValue;
+  } else if ([value respondsToSelector:@selector(doubleValue)]) {
+    return [value doubleValue];
+  }
+  return defaultValue;
 }
 
 - (double)doubleForKey:(id)key
 {
-    return [self doubleForKey:key defaultValue:0.0];
-}
-
-- (unsigned int)unsignedIntForKey:(id)key defaultValue:(unsigned int)defaultValue
-{
-    id value = [self objectForKey:key];
-    if ([value respondsToSelector:@selector(unsignedIntValue)]) {
-        return [value unsignedIntValue];
-    }
-    return defaultValue;
-    
-}
-
-- (unsigned int)unsignedIntForKey:(id)key
-{
-    return [self unsignedIntForKey:key defaultValue:0];
+  return [self doubleForKey:key defaultValue:0.0];
 }
 
 - (unsigned long long int)unsignedLongLongForKey:(id)key defaultValue:(unsigned long long int)defaultValue
 {
-    id value = [self objectForKey:key];
-    if ([value respondsToSelector:@selector(unsignedLongLongValue)]) {
-        return [value unsignedLongLongValue];
+  id value = [self objectForKey:key];
+  
+  if ([value isKindOfClass:[NSString class]]) {
+    unsigned long long scanResult;
+    NSScanner *scanner = [NSScanner scannerWithString:value];
+    BOOL success = [scanner scanUnsignedLongLong:&scanResult];
+    
+    if (success && [scanner isAtEnd]) {
+      return scanResult;
     }
-    return defaultValue;
+  } else if ([value respondsToSelector:@selector(unsignedLongLongValue)]) {
+		return [value unsignedLongLongValue];
+	}
+  return defaultValue;
 }
 
 - (unsigned long long int)unsignedLongLongForKey:(id)key
 {
-    return [self unsignedLongLongForKey:key defaultValue:0ULL];
+  return [self unsignedLongLongForKey:key defaultValue:0ULL];
 }
 
 #pragma mark - Object helpers
 
 - (NSString *)stringForKey:(id)key defaultValue:(NSString *)defaultValue
 {
-    id string = [self objectForKey:key];
-    if ([string isKindOfClass:[NSString class]]) {
-        return string;
-    }
-    if ([string respondsToSelector:@selector(stringValue)]) {
-        return [string stringValue];
-    }
-    return defaultValue;
+  id string = [self objectForKey:key];
+  if ([string isKindOfClass:[NSString class]]) {
+    return string;
+  }
+  if ([string respondsToSelector:@selector(stringValue)]) {
+    return [string stringValue];
+  }
+  return defaultValue;
 }
 
 - (NSString *)stringForKey:(id)key
 {
-    return [self stringForKey:key defaultValue:nil];
+  return [self stringForKey:key defaultValue:nil];
 }
 
 - (NSArray *)arrayForKey:(id)key defaultValue:(NSArray *)defaultValue
 {
-    id array = [self objectForKey:key];
+  id array = [self objectForKey:key];
 	if ([array isKindOfClass:[NSArray class]]) {
 		return array;
-    }
-    return defaultValue;
+  }
+  return defaultValue;
 }
 
 - (NSArray *)arrayForKey:(id)key
@@ -161,11 +181,11 @@
 
 - (NSDictionary *)dictionaryForKey:(id)key defaultValue:(NSDictionary *)defaultValue
 {
-    id dict = [self objectForKey:key];
+  id dict = [self objectForKey:key];
 	if ([dict isKindOfClass:[NSDictionary class]]) {
 		return dict;
-    }
-    return defaultValue;
+  }
+  return defaultValue;
 }
 
 - (NSDictionary *)dictionaryForKey:(id)key
@@ -173,32 +193,50 @@
 	return [self dictionaryForKey:key defaultValue:nil];
 }
 
-//- (id)jsonObjectForKey:(id)key ofClass:(Class)class
-//{
-//    if (![class conformsToProtocol:@protocol(KMBJSONObjectInitializationProtocol)]) {
-//        @throw([NSException exceptionWithName:NSInternalInconsistencyException
-//                                       reason:[NSString stringWithFormat:@"Class %@ does not conform to %@",
-//                                               NSStringFromClass(class),
-//                                               NSStringFromProtocol(@protocol(KMBJSONObjectInitializationProtocol))]
-//                                     userInfo:nil]);
-//    }
-//    
-//    id dictionary = [self objectForKey:key];
-//	if ([dictionary isKindOfClass:[NSDictionary class]]) {
-//        return [[[class class] alloc] initWithJSONDictionary:dictionary];
-//    }
-//    return nil;
-//}
+- (id)jsonObjectForKey:(id)key ofClass:(Class)klas
+{
+  if (![klas conformsToProtocol:@protocol(ZSTJSONObjectInitializationProtocol)]) {
+    @throw([NSException exceptionWithName:NSInternalInconsistencyException
+                                   reason:[NSString stringWithFormat:@"Class %@ does not conform to %@",
+                                           NSStringFromClass(klas),
+                                           NSStringFromProtocol(@protocol(ZSTJSONObjectInitializationProtocol))]
+                                 userInfo:nil]);
+  }
+  
+  NSDictionary *json = [self dictionaryForKey:key];
+	if (json) {
+    return [[klas alloc] initWithJSONDictionary:json];
+  }
+  return nil;
+}
+
+- (NSArray *)jsonObjectArrayForKey:(id)key ofClass:(Class)klas
+{
+  if (![klas conformsToProtocol:@protocol(ZSTJSONObjectInitializationProtocol)]) {
+    @throw([NSException exceptionWithName:NSInternalInconsistencyException
+                                   reason:[NSString stringWithFormat:@"Class %@ does not conform to %@",
+                                           NSStringFromClass(klas),
+                                           NSStringFromProtocol(@protocol(ZSTJSONObjectInitializationProtocol))]
+                                 userInfo:nil]);
+  }
+  
+  NSMutableArray *objects = [NSMutableArray array];
+  NSArray *jsonArray = [self arrayForKey:key];
+  for (NSDictionary *json in jsonArray) {
+    [objects addObject:[[klas alloc] initWithJSONDictionary:json]];
+  }
+  return objects;
+}
 
 #pragma mark - Basic helpers
 
 - (id)objectForKey:(id)key defaultObject:(id)defaultObject
 {
-    id object = [self objectForKey:key];
-    if (object) {
-        return object;
-    }
-    return defaultObject;
+  id object = [self objectForKey:key];
+  if (object) {
+    return object;
+  }
+  return defaultObject;
 }
 
 - (BOOL)hasKey:(id)key

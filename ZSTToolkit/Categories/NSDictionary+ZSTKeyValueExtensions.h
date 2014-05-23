@@ -10,10 +10,10 @@
 
 @interface NSDictionary (ZSTKeyValueExtensions)
 
-// ObjC primitive helpers
+#pragma mark - ObjC Primitive Helpers
 
 - (NSInteger)integerForKey:(id)key defaultValue:(NSInteger)defaultValue;
-- (NSInteger)integerForKey:(NSString *)key;
+- (NSInteger)integerForKey:(id)key;
 
 - (NSUInteger)unsignedIntegerForKey:(id)key defaultValue:(NSUInteger)defaultValue;
 - (NSUInteger)unsignedIntegerForKey:(id)key;
@@ -21,10 +21,7 @@
 - (BOOL)boolForKey:(id)key defaultValue:(BOOL)defaultValue;
 - (BOOL)boolForKey:(id)key;
 
-// Primitive helpers
-
-- (int)intForKey:(id)key defaultValue:(int)defaultValue;
-- (int)intForKey:(id)key;
+#pragma mark - Primitive Helpers
 
 - (float)floatForKey:(id)key defaultValue:(float)defaultValue;
 - (float)floatForKey:(id)key;
@@ -32,15 +29,10 @@
 - (double)doubleForKey:(id)key defaultValue:(double)defaultValue;
 - (double)doubleForKey:(id)key;
 
-- (unsigned int)unsignedIntForKey:(id)key defaultValue:(unsigned int)defaultValue;
-- (unsigned int)unsignedIntForKey:(id)key;
-
 - (unsigned long long int)unsignedLongLongForKey:(id)key defaultValue:(unsigned long long int)defaultValue;
 - (unsigned long long int)unsignedLongLongForKey:(id)key;
 
-// Object helpers
-
-//- (id)jsonObjectForKey:(id)key ofClass:(Class)class;
+#pragma mark - Object Helpers
 
 - (NSString *)stringForKey:(id)key defaultValue:(NSString *)defaultValue;
 - (NSString *)stringForKey:(id)key;
@@ -51,7 +43,10 @@
 - (NSDictionary *)dictionaryForKey:(id)key defaultValue:(NSDictionary *)defaultValue;
 - (NSDictionary *)dictionaryForKey:(id)key;
 
-// Basic helpers
+- (id)jsonObjectForKey:(id)key ofClass:(Class)klas;
+- (NSArray *)jsonObjectArrayForKey:(id)key ofClass:(Class)klas;
+
+#pragma mark - Basic Helpers
 
 - (BOOL)hasKey:(id)key;
 - (id)objectForKey:(id)key defaultObject:(id)defaultObject;

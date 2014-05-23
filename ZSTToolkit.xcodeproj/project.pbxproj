@@ -36,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		0775BC94BF194213AD1D0B19 /* libPods-ZSTToolkitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZSTToolkitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA5581FC192F605C003E643C /* ZSTJSONObjectInitializationProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSTJSONObjectInitializationProtocol.h; sourceTree = "<group>"; };
 		BA8463BD192E9E8900622332 /* Warnings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
 		BAD1DB26192D35B100DF8FCE /* ZSTToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSTToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD1DB29192D35B100DF8FCE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -161,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				BAD1DB59192D535A00DF8FCE /* Categories */,
+				BA5581FC192F605C003E643C /* ZSTJSONObjectInitializationProtocol.h */,
 			);
 			path = ZSTToolkit;
 			sourceTree = "<group>";
