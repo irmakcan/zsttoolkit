@@ -12,6 +12,8 @@
 		BA558201192F6773003E643C /* NSMutableDictionaryKeyValueExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BA558200192F6773003E643C /* NSMutableDictionaryKeyValueExtensionsSpec.m */; };
 		BA558204192FA58E003E643C /* UIView+ZSTFrameAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BA558203192FA58E003E643C /* UIView+ZSTFrameAdditions.m */; };
 		BA8463BE192E9E8900622332 /* Warnings.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BA8463BD192E9E8900622332 /* Warnings.xcconfig */; };
+		BAA9F8FC192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F8FB192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.m */; };
+		BAA9F8FE192FC61C0007DB78 /* ZSTExceptionAbstractClassAdditionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F8FD192FC61C0007DB78 /* ZSTExceptionAbstractClassAdditionsSpec.m */; };
 		BAAAFF0B192FA7DC008145CA /* ZSTViewFrameAdditionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAAFF0A192FA7DC008145CA /* ZSTViewFrameAdditionsSpec.m */; };
 		BAD1DB2A192D35B100DF8FCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD1DB29192D35B100DF8FCE /* Foundation.framework */; };
 		BAD1DB2C192D35B100DF8FCE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD1DB2B192D35B100DF8FCE /* CoreGraphics.framework */; };
@@ -47,6 +49,9 @@
 		BA558202192FA58E003E643C /* UIView+ZSTFrameAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZSTFrameAdditions.h"; sourceTree = "<group>"; };
 		BA558203192FA58E003E643C /* UIView+ZSTFrameAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZSTFrameAdditions.m"; sourceTree = "<group>"; };
 		BA8463BD192E9E8900622332 /* Warnings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
+		BAA9F8FA192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSException+ZSTAbstractClassAdditions.h"; sourceTree = "<group>"; };
+		BAA9F8FB192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSException+ZSTAbstractClassAdditions.m"; sourceTree = "<group>"; };
+		BAA9F8FD192FC61C0007DB78 /* ZSTExceptionAbstractClassAdditionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTExceptionAbstractClassAdditionsSpec.m; sourceTree = "<group>"; };
 		BAAAFF0A192FA7DC008145CA /* ZSTViewFrameAdditionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTViewFrameAdditionsSpec.m; sourceTree = "<group>"; };
 		BAD1DB26192D35B100DF8FCE /* ZSTToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSTToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD1DB29192D35B100DF8FCE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -157,6 +162,7 @@
 				BAD1DB5D192DDA0800DF8FCE /* ZSTDictionaryKeyValueExtensionsSpec.m */,
 				BA558200192F6773003E643C /* NSMutableDictionaryKeyValueExtensionsSpec.m */,
 				BAAAFF0A192FA7DC008145CA /* ZSTViewFrameAdditionsSpec.m */,
+				BAA9F8FD192FC61C0007DB78 /* ZSTExceptionAbstractClassAdditionsSpec.m */,
 			);
 			path = ZSTToolkitTests;
 			sourceTree = "<group>";
@@ -188,6 +194,8 @@
 				BA5581FE192F66D5003E643C /* NSMutableDictionary+ZSTKeyValueExtensions.m */,
 				BA558202192FA58E003E643C /* UIView+ZSTFrameAdditions.h */,
 				BA558203192FA58E003E643C /* UIView+ZSTFrameAdditions.m */,
+				BAA9F8FA192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.h */,
+				BAA9F8FB192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -342,6 +350,7 @@
 				BA558204192FA58E003E643C /* UIView+ZSTFrameAdditions.m in Sources */,
 				BAD1DB5C192D53A400DF8FCE /* NSDictionary+ZSTKeyValueExtensions.m in Sources */,
 				BA5581FF192F66D5003E643C /* NSMutableDictionary+ZSTKeyValueExtensions.m in Sources */,
+				BAA9F8FC192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.m in Sources */,
 				BAD1DB3A192D35B100DF8FCE /* ZSTAppDelegate.m in Sources */,
 				BAD1DB36192D35B100DF8FCE /* main.m in Sources */,
 			);
@@ -354,6 +363,7 @@
 				BA558201192F6773003E643C /* NSMutableDictionaryKeyValueExtensionsSpec.m in Sources */,
 				BAAAFF0B192FA7DC008145CA /* ZSTViewFrameAdditionsSpec.m in Sources */,
 				BAD1DB5E192DDA0800DF8FCE /* ZSTDictionaryKeyValueExtensionsSpec.m in Sources */,
+				BAA9F8FE192FC61C0007DB78 /* ZSTExceptionAbstractClassAdditionsSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
