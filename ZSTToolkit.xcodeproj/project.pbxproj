@@ -14,6 +14,7 @@
 		BA8463BE192E9E8900622332 /* Warnings.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BA8463BD192E9E8900622332 /* Warnings.xcconfig */; };
 		BAA9F8FC192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F8FB192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.m */; };
 		BAA9F8FE192FC61C0007DB78 /* ZSTExceptionAbstractClassAdditionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F8FD192FC61C0007DB78 /* ZSTExceptionAbstractClassAdditionsSpec.m */; };
+		BAA9F901192FCFF20007DB78 /* ZSTRGBSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F900192FCFF20007DB78 /* ZSTRGBSpec.m */; };
 		BAAAFF0B192FA7DC008145CA /* ZSTViewFrameAdditionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAAFF0A192FA7DC008145CA /* ZSTViewFrameAdditionsSpec.m */; };
 		BAD1DB2A192D35B100DF8FCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD1DB29192D35B100DF8FCE /* Foundation.framework */; };
 		BAD1DB2C192D35B100DF8FCE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD1DB2B192D35B100DF8FCE /* CoreGraphics.framework */; };
@@ -52,6 +53,8 @@
 		BAA9F8FA192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSException+ZSTAbstractClassAdditions.h"; sourceTree = "<group>"; };
 		BAA9F8FB192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSException+ZSTAbstractClassAdditions.m"; sourceTree = "<group>"; };
 		BAA9F8FD192FC61C0007DB78 /* ZSTExceptionAbstractClassAdditionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTExceptionAbstractClassAdditionsSpec.m; sourceTree = "<group>"; };
+		BAA9F8FF192FCFA40007DB78 /* ZSTRGB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSTRGB.h; sourceTree = "<group>"; };
+		BAA9F900192FCFF20007DB78 /* ZSTRGBSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTRGBSpec.m; sourceTree = "<group>"; };
 		BAAAFF0A192FA7DC008145CA /* ZSTViewFrameAdditionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTViewFrameAdditionsSpec.m; sourceTree = "<group>"; };
 		BAD1DB26192D35B100DF8FCE /* ZSTToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSTToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD1DB29192D35B100DF8FCE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -163,6 +166,7 @@
 				BA558200192F6773003E643C /* NSMutableDictionaryKeyValueExtensionsSpec.m */,
 				BAAAFF0A192FA7DC008145CA /* ZSTViewFrameAdditionsSpec.m */,
 				BAA9F8FD192FC61C0007DB78 /* ZSTExceptionAbstractClassAdditionsSpec.m */,
+				BAA9F900192FCFF20007DB78 /* ZSTRGBSpec.m */,
 			);
 			path = ZSTToolkitTests;
 			sourceTree = "<group>";
@@ -181,6 +185,7 @@
 			children = (
 				BAD1DB59192D535A00DF8FCE /* Categories */,
 				BA5581FC192F605C003E643C /* ZSTJSONObjectInitializationProtocol.h */,
+				BAA9F8FF192FCFA40007DB78 /* ZSTRGB.h */,
 			);
 			path = ZSTToolkit;
 			sourceTree = "<group>";
@@ -364,6 +369,7 @@
 				BAAAFF0B192FA7DC008145CA /* ZSTViewFrameAdditionsSpec.m in Sources */,
 				BAD1DB5E192DDA0800DF8FCE /* ZSTDictionaryKeyValueExtensionsSpec.m in Sources */,
 				BAA9F8FE192FC61C0007DB78 /* ZSTExceptionAbstractClassAdditionsSpec.m in Sources */,
+				BAA9F901192FCFF20007DB78 /* ZSTRGBSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
