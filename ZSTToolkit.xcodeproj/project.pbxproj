@@ -15,6 +15,10 @@
 		BAA9F8FC192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F8FB192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.m */; };
 		BAA9F8FE192FC61C0007DB78 /* ZSTExceptionAbstractClassAdditionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F8FD192FC61C0007DB78 /* ZSTExceptionAbstractClassAdditionsSpec.m */; };
 		BAA9F901192FCFF20007DB78 /* ZSTRGBSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F900192FCFF20007DB78 /* ZSTRGBSpec.m */; };
+		BAA9F904192FD9150007DB78 /* ZSTWildcardGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F903192FD9150007DB78 /* ZSTWildcardGestureRecognizer.m */; };
+		BAA9F906192FE1750007DB78 /* ZSTWildcardGestureRecognizerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F905192FE1750007DB78 /* ZSTWildcardGestureRecognizerSpec.m */; };
+		BAA9F90C192FFDF50007DB78 /* ZSTWildCardGestureTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F90A192FFDF50007DB78 /* ZSTWildCardGestureTestViewController.m */; };
+		BAA9F90D192FFDF50007DB78 /* ZSTWildCardGestureTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAA9F90B192FFDF50007DB78 /* ZSTWildCardGestureTestViewController.xib */; };
 		BAAAFF0B192FA7DC008145CA /* ZSTViewFrameAdditionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAAFF0A192FA7DC008145CA /* ZSTViewFrameAdditionsSpec.m */; };
 		BAD1DB2A192D35B100DF8FCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD1DB29192D35B100DF8FCE /* Foundation.framework */; };
 		BAD1DB2C192D35B100DF8FCE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD1DB2B192D35B100DF8FCE /* CoreGraphics.framework */; };
@@ -55,6 +59,12 @@
 		BAA9F8FD192FC61C0007DB78 /* ZSTExceptionAbstractClassAdditionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTExceptionAbstractClassAdditionsSpec.m; sourceTree = "<group>"; };
 		BAA9F8FF192FCFA40007DB78 /* ZSTRGB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSTRGB.h; sourceTree = "<group>"; };
 		BAA9F900192FCFF20007DB78 /* ZSTRGBSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTRGBSpec.m; sourceTree = "<group>"; };
+		BAA9F902192FD9150007DB78 /* ZSTWildcardGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSTWildcardGestureRecognizer.h; sourceTree = "<group>"; };
+		BAA9F903192FD9150007DB78 /* ZSTWildcardGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTWildcardGestureRecognizer.m; sourceTree = "<group>"; };
+		BAA9F905192FE1750007DB78 /* ZSTWildcardGestureRecognizerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTWildcardGestureRecognizerSpec.m; sourceTree = "<group>"; };
+		BAA9F909192FFDF50007DB78 /* ZSTWildCardGestureTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSTWildCardGestureTestViewController.h; sourceTree = "<group>"; };
+		BAA9F90A192FFDF50007DB78 /* ZSTWildCardGestureTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTWildCardGestureTestViewController.m; sourceTree = "<group>"; };
+		BAA9F90B192FFDF50007DB78 /* ZSTWildCardGestureTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZSTWildCardGestureTestViewController.xib; sourceTree = "<group>"; };
 		BAAAFF0A192FA7DC008145CA /* ZSTViewFrameAdditionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTViewFrameAdditionsSpec.m; sourceTree = "<group>"; };
 		BAD1DB26192D35B100DF8FCE /* ZSTToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSTToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD1DB29192D35B100DF8FCE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,8 +74,8 @@
 		BAD1DB33192D35B100DF8FCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BAD1DB35192D35B100DF8FCE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BAD1DB37192D35B100DF8FCE /* ZSTToolkit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZSTToolkit-Prefix.pch"; sourceTree = "<group>"; };
-		BAD1DB38192D35B100DF8FCE /* ZSTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSTAppDelegate.h; sourceTree = "<group>"; };
-		BAD1DB39192D35B100DF8FCE /* ZSTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSTAppDelegate.m; sourceTree = "<group>"; };
+		BAD1DB38192D35B100DF8FCE /* ZSTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZSTAppDelegate.h; path = ../ZSTAppDelegate.h; sourceTree = "<group>"; };
+		BAD1DB39192D35B100DF8FCE /* ZSTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZSTAppDelegate.m; path = ../ZSTAppDelegate.m; sourceTree = "<group>"; };
 		BAD1DB3B192D35B100DF8FCE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BAD1DB41192D35B200DF8FCE /* ZSTToolkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZSTToolkitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD1DB42192D35B200DF8FCE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -102,6 +112,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BAA9F907192FFD830007DB78 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BAA9F908192FFDA70007DB78 /* ViewControllers */,
+				BAD1DB38192D35B100DF8FCE /* ZSTAppDelegate.h */,
+				BAD1DB39192D35B100DF8FCE /* ZSTAppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BAA9F908192FFDA70007DB78 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BAA9F909192FFDF50007DB78 /* ZSTWildCardGestureTestViewController.h */,
+				BAA9F90A192FFDF50007DB78 /* ZSTWildCardGestureTestViewController.m */,
+				BAA9F90B192FFDF50007DB78 /* ZSTWildCardGestureTestViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		BAD1DB1D192D35B100DF8FCE = {
 			isa = PBXGroup;
 			children = (
@@ -138,8 +168,7 @@
 		BAD1DB2F192D35B100DF8FCE /* ZSTToolkitExample */ = {
 			isa = PBXGroup;
 			children = (
-				BAD1DB38192D35B100DF8FCE /* ZSTAppDelegate.h */,
-				BAD1DB39192D35B100DF8FCE /* ZSTAppDelegate.m */,
+				BAA9F907192FFD830007DB78 /* Classes */,
 				BAD1DB3B192D35B100DF8FCE /* Images.xcassets */,
 				BAD1DB30192D35B100DF8FCE /* Supporting Files */,
 			);
@@ -167,6 +196,7 @@
 				BAAAFF0A192FA7DC008145CA /* ZSTViewFrameAdditionsSpec.m */,
 				BAA9F8FD192FC61C0007DB78 /* ZSTExceptionAbstractClassAdditionsSpec.m */,
 				BAA9F900192FCFF20007DB78 /* ZSTRGBSpec.m */,
+				BAA9F905192FE1750007DB78 /* ZSTWildcardGestureRecognizerSpec.m */,
 			);
 			path = ZSTToolkitTests;
 			sourceTree = "<group>";
@@ -186,6 +216,8 @@
 				BAD1DB59192D535A00DF8FCE /* Categories */,
 				BA5581FC192F605C003E643C /* ZSTJSONObjectInitializationProtocol.h */,
 				BAA9F8FF192FCFA40007DB78 /* ZSTRGB.h */,
+				BAA9F902192FD9150007DB78 /* ZSTWildcardGestureRecognizer.h */,
+				BAA9F903192FD9150007DB78 /* ZSTWildcardGestureRecognizer.m */,
 			);
 			path = ZSTToolkit;
 			sourceTree = "<group>";
@@ -284,6 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAA9F90D192FFDF50007DB78 /* ZSTWildCardGestureTestViewController.xib in Resources */,
 				BAD1DB34192D35B100DF8FCE /* InfoPlist.strings in Resources */,
 				BAD1DB3C192D35B100DF8FCE /* Images.xcassets in Resources */,
 			);
@@ -354,9 +387,11 @@
 			files = (
 				BA558204192FA58E003E643C /* UIView+ZSTFrameAdditions.m in Sources */,
 				BAD1DB5C192D53A400DF8FCE /* NSDictionary+ZSTKeyValueExtensions.m in Sources */,
+				BAA9F90C192FFDF50007DB78 /* ZSTWildCardGestureTestViewController.m in Sources */,
 				BA5581FF192F66D5003E643C /* NSMutableDictionary+ZSTKeyValueExtensions.m in Sources */,
 				BAA9F8FC192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.m in Sources */,
 				BAD1DB3A192D35B100DF8FCE /* ZSTAppDelegate.m in Sources */,
+				BAA9F904192FD9150007DB78 /* ZSTWildcardGestureRecognizer.m in Sources */,
 				BAD1DB36192D35B100DF8FCE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,6 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAA9F906192FE1750007DB78 /* ZSTWildcardGestureRecognizerSpec.m in Sources */,
 				BA558201192F6773003E643C /* NSMutableDictionaryKeyValueExtensionsSpec.m in Sources */,
 				BAAAFF0B192FA7DC008145CA /* ZSTViewFrameAdditionsSpec.m in Sources */,
 				BAD1DB5E192DDA0800DF8FCE /* ZSTDictionaryKeyValueExtensionsSpec.m in Sources */,
