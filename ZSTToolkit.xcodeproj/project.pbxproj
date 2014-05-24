@@ -19,6 +19,8 @@
 		BAA9F906192FE1750007DB78 /* ZSTWildcardGestureRecognizerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F905192FE1750007DB78 /* ZSTWildcardGestureRecognizerSpec.m */; };
 		BAA9F90C192FFDF50007DB78 /* ZSTWildCardGestureTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F90A192FFDF50007DB78 /* ZSTWildCardGestureTestViewController.m */; };
 		BAA9F90D192FFDF50007DB78 /* ZSTWildCardGestureTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAA9F90B192FFDF50007DB78 /* ZSTWildCardGestureTestViewController.xib */; };
+		BAA9F913193013870007DB78 /* NSMutableAttributedString+ZSTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F912193013870007DB78 /* NSMutableAttributedString+ZSTAdditions.m */; };
+		BAA9F9151930A33E0007DB78 /* ZSTMutableAttributedStringAdditionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F9141930A33E0007DB78 /* ZSTMutableAttributedStringAdditionsSpec.m */; };
 		BAAAFF0B192FA7DC008145CA /* ZSTViewFrameAdditionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAAFF0A192FA7DC008145CA /* ZSTViewFrameAdditionsSpec.m */; };
 		BAD1DB2A192D35B100DF8FCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD1DB29192D35B100DF8FCE /* Foundation.framework */; };
 		BAD1DB2C192D35B100DF8FCE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD1DB2B192D35B100DF8FCE /* CoreGraphics.framework */; };
@@ -65,6 +67,9 @@
 		BAA9F909192FFDF50007DB78 /* ZSTWildCardGestureTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSTWildCardGestureTestViewController.h; sourceTree = "<group>"; };
 		BAA9F90A192FFDF50007DB78 /* ZSTWildCardGestureTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTWildCardGestureTestViewController.m; sourceTree = "<group>"; };
 		BAA9F90B192FFDF50007DB78 /* ZSTWildCardGestureTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZSTWildCardGestureTestViewController.xib; sourceTree = "<group>"; };
+		BAA9F911193013870007DB78 /* NSMutableAttributedString+ZSTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+ZSTAdditions.h"; sourceTree = "<group>"; };
+		BAA9F912193013870007DB78 /* NSMutableAttributedString+ZSTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+ZSTAdditions.m"; sourceTree = "<group>"; };
+		BAA9F9141930A33E0007DB78 /* ZSTMutableAttributedStringAdditionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTMutableAttributedStringAdditionsSpec.m; sourceTree = "<group>"; };
 		BAAAFF0A192FA7DC008145CA /* ZSTViewFrameAdditionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTViewFrameAdditionsSpec.m; sourceTree = "<group>"; };
 		BAD1DB26192D35B100DF8FCE /* ZSTToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSTToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD1DB29192D35B100DF8FCE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -197,6 +202,7 @@
 				BAA9F8FD192FC61C0007DB78 /* ZSTExceptionAbstractClassAdditionsSpec.m */,
 				BAA9F900192FCFF20007DB78 /* ZSTRGBSpec.m */,
 				BAA9F905192FE1750007DB78 /* ZSTWildcardGestureRecognizerSpec.m */,
+				BAA9F9141930A33E0007DB78 /* ZSTMutableAttributedStringAdditionsSpec.m */,
 			);
 			path = ZSTToolkitTests;
 			sourceTree = "<group>";
@@ -233,6 +239,8 @@
 				BA558203192FA58E003E643C /* UIView+ZSTFrameAdditions.m */,
 				BAA9F8FA192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.h */,
 				BAA9F8FB192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.m */,
+				BAA9F911193013870007DB78 /* NSMutableAttributedString+ZSTAdditions.h */,
+				BAA9F912193013870007DB78 /* NSMutableAttributedString+ZSTAdditions.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -387,6 +395,7 @@
 			files = (
 				BA558204192FA58E003E643C /* UIView+ZSTFrameAdditions.m in Sources */,
 				BAD1DB5C192D53A400DF8FCE /* NSDictionary+ZSTKeyValueExtensions.m in Sources */,
+				BAA9F913193013870007DB78 /* NSMutableAttributedString+ZSTAdditions.m in Sources */,
 				BAA9F90C192FFDF50007DB78 /* ZSTWildCardGestureTestViewController.m in Sources */,
 				BA5581FF192F66D5003E643C /* NSMutableDictionary+ZSTKeyValueExtensions.m in Sources */,
 				BAA9F8FC192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.m in Sources */,
@@ -406,6 +415,7 @@
 				BAD1DB5E192DDA0800DF8FCE /* ZSTDictionaryKeyValueExtensionsSpec.m in Sources */,
 				BAA9F8FE192FC61C0007DB78 /* ZSTExceptionAbstractClassAdditionsSpec.m in Sources */,
 				BAA9F901192FCFF20007DB78 /* ZSTRGBSpec.m in Sources */,
+				BAA9F9151930A33E0007DB78 /* ZSTMutableAttributedStringAdditionsSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
