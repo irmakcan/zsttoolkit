@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		52EA50C6D36140DBABE1AFEB /* libPods-ZSTToolkitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0775BC94BF194213AD1D0B19 /* libPods-ZSTToolkitTests.a */; };
 		BA5581FF192F66D5003E643C /* NSMutableDictionary+ZSTKeyValueExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5581FE192F66D5003E643C /* NSMutableDictionary+ZSTKeyValueExtensions.m */; };
-		BA558201192F6773003E643C /* NSMutableDictionaryKeyValueExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BA558200192F6773003E643C /* NSMutableDictionaryKeyValueExtensionsSpec.m */; };
+		BA558201192F6773003E643C /* ZSTMutableDictionaryKeyValueExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BA558200192F6773003E643C /* ZSTMutableDictionaryKeyValueExtensionsSpec.m */; };
 		BA558204192FA58E003E643C /* UIView+ZSTFrameAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BA558203192FA58E003E643C /* UIView+ZSTFrameAdditions.m */; };
 		BA8463BE192E9E8900622332 /* Warnings.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BA8463BD192E9E8900622332 /* Warnings.xcconfig */; };
 		BAA9F8FC192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F8FB192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.m */; };
@@ -56,7 +56,7 @@
 		BA5581FC192F605C003E643C /* ZSTJSONObjectInitializationProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSTJSONObjectInitializationProtocol.h; sourceTree = "<group>"; };
 		BA5581FD192F66D5003E643C /* NSMutableDictionary+ZSTKeyValueExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+ZSTKeyValueExtensions.h"; sourceTree = "<group>"; };
 		BA5581FE192F66D5003E643C /* NSMutableDictionary+ZSTKeyValueExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+ZSTKeyValueExtensions.m"; sourceTree = "<group>"; };
-		BA558200192F6773003E643C /* NSMutableDictionaryKeyValueExtensionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableDictionaryKeyValueExtensionsSpec.m; sourceTree = "<group>"; };
+		BA558200192F6773003E643C /* ZSTMutableDictionaryKeyValueExtensionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTMutableDictionaryKeyValueExtensionsSpec.m; sourceTree = "<group>"; };
 		BA558202192FA58E003E643C /* UIView+ZSTFrameAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZSTFrameAdditions.h"; sourceTree = "<group>"; };
 		BA558203192FA58E003E643C /* UIView+ZSTFrameAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZSTFrameAdditions.m"; sourceTree = "<group>"; };
 		BA8463BD192E9E8900622332 /* Warnings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
@@ -207,7 +207,7 @@
 			children = (
 				BAD1DB49192D35B200DF8FCE /* Supporting Files */,
 				BAD1DB5D192DDA0800DF8FCE /* ZSTDictionaryKeyValueExtensionsSpec.m */,
-				BA558200192F6773003E643C /* NSMutableDictionaryKeyValueExtensionsSpec.m */,
+				BA558200192F6773003E643C /* ZSTMutableDictionaryKeyValueExtensionsSpec.m */,
 				BAAAFF0A192FA7DC008145CA /* ZSTViewFrameAdditionsSpec.m */,
 				BAA9F8FD192FC61C0007DB78 /* ZSTExceptionAbstractClassAdditionsSpec.m */,
 				BAA9F900192FCFF20007DB78 /* ZSTRGBSpec.m */,
@@ -429,7 +429,7 @@
 			files = (
 				BAA9F906192FE1750007DB78 /* ZSTWildcardGestureRecognizerSpec.m in Sources */,
 				BAA9F91F1930ED770007DB78 /* ZSTStringValidationsSpec.m in Sources */,
-				BA558201192F6773003E643C /* NSMutableDictionaryKeyValueExtensionsSpec.m in Sources */,
+				BA558201192F6773003E643C /* ZSTMutableDictionaryKeyValueExtensionsSpec.m in Sources */,
 				BAAAFF0B192FA7DC008145CA /* ZSTViewFrameAdditionsSpec.m in Sources */,
 				BAD1DB5E192DDA0800DF8FCE /* ZSTDictionaryKeyValueExtensionsSpec.m in Sources */,
 				BAA9F91A1930AB0F0007DB78 /* ZSTAttributedStringCreationAdditionsSpec.m in Sources */,

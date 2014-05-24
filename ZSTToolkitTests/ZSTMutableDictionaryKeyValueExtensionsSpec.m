@@ -10,7 +10,7 @@
 #import "NSMutableDictionary+ZSTKeyValueExtensions.h"
 
 
-SPEC_BEGIN(NSMutableDictionaryKeyValueExtensionsSpec)
+SPEC_BEGIN(ZSTMutableDictionaryKeyValueExtensionsSpec)
 
 describe(@"NSMutableDictionary", ^{
   __block NSMutableDictionary *dict;
