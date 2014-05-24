@@ -1,0 +1,23 @@
+//
+//  NSAttributedString+ZSTCreationAdditions.h
+//  ZSTToolkit
+//
+//  Created by Irmak Can Ozsut on 24/05/14.
+//  Copyright (c) 2014 Irmak Can Ozsut. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface NSAttributedString (ZSTCreationAdditions)
+
+/**
+ *  Creates a new AttributedString from given text to attributes mappings by appending them in order.
+ *
+ *  @param textToAttributesMappings An array which includes texts and attributes needed to generate attributed string.
+ *                                  Example: @[@{"Hello, ": @{NSFontAttributeName: font}, @{"World!": @{NSFontAttributeName: boldFont}}]
+ *
+ *  @return An NSAttributedString object consisting of the strings with attributes appended with each other.
+ */
++ (NSAttributedString *)zst_attributedStringFromTextToAttributesMappings:(NSArray *)textToAttributesMappings;
+
+@end
