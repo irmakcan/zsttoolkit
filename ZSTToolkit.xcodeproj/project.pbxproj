@@ -25,6 +25,8 @@
 		BAA9F91A1930AB0F0007DB78 /* ZSTAttributedStringCreationAdditionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F9191930AB0F0007DB78 /* ZSTAttributedStringCreationAdditionsSpec.m */; };
 		BAA9F91D1930ECE10007DB78 /* NSString+ZSTValidations.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F91C1930ECE10007DB78 /* NSString+ZSTValidations.m */; };
 		BAA9F91F1930ED770007DB78 /* ZSTStringValidationsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F91E1930ED770007DB78 /* ZSTStringValidationsSpec.m */; };
+		BAA9F9221931013F0007DB78 /* UINavigationController+ZSTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F9211931013F0007DB78 /* UINavigationController+ZSTAdditions.m */; };
+		BAA9F9241931026E0007DB78 /* ZSTNavigationControllerAdditionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F9231931026E0007DB78 /* ZSTNavigationControllerAdditionsSpec.m */; };
 		BAAAFF0B192FA7DC008145CA /* ZSTViewFrameAdditionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAAFF0A192FA7DC008145CA /* ZSTViewFrameAdditionsSpec.m */; };
 		BAD1DB2A192D35B100DF8FCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD1DB29192D35B100DF8FCE /* Foundation.framework */; };
 		BAD1DB2C192D35B100DF8FCE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD1DB2B192D35B100DF8FCE /* CoreGraphics.framework */; };
@@ -80,6 +82,9 @@
 		BAA9F91B1930ECE10007DB78 /* NSString+ZSTValidations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZSTValidations.h"; sourceTree = "<group>"; };
 		BAA9F91C1930ECE10007DB78 /* NSString+ZSTValidations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZSTValidations.m"; sourceTree = "<group>"; };
 		BAA9F91E1930ED770007DB78 /* ZSTStringValidationsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTStringValidationsSpec.m; sourceTree = "<group>"; };
+		BAA9F9201931013F0007DB78 /* UINavigationController+ZSTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+ZSTAdditions.h"; sourceTree = "<group>"; };
+		BAA9F9211931013F0007DB78 /* UINavigationController+ZSTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+ZSTAdditions.m"; sourceTree = "<group>"; };
+		BAA9F9231931026E0007DB78 /* ZSTNavigationControllerAdditionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTNavigationControllerAdditionsSpec.m; sourceTree = "<group>"; };
 		BAAAFF0A192FA7DC008145CA /* ZSTViewFrameAdditionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTViewFrameAdditionsSpec.m; sourceTree = "<group>"; };
 		BAD1DB26192D35B100DF8FCE /* ZSTToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSTToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD1DB29192D35B100DF8FCE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -215,6 +220,7 @@
 				BAA9F9141930A33E0007DB78 /* ZSTMutableAttributedStringAdditionsSpec.m */,
 				BAA9F9191930AB0F0007DB78 /* ZSTAttributedStringCreationAdditionsSpec.m */,
 				BAA9F91E1930ED770007DB78 /* ZSTStringValidationsSpec.m */,
+				BAA9F9231931026E0007DB78 /* ZSTNavigationControllerAdditionsSpec.m */,
 			);
 			path = ZSTToolkitTests;
 			sourceTree = "<group>";
@@ -257,6 +263,8 @@
 				BAA9F9171930A7170007DB78 /* NSAttributedString+ZSTCreationAdditions.m */,
 				BAA9F91B1930ECE10007DB78 /* NSString+ZSTValidations.h */,
 				BAA9F91C1930ECE10007DB78 /* NSString+ZSTValidations.m */,
+				BAA9F9201931013F0007DB78 /* UINavigationController+ZSTAdditions.h */,
+				BAA9F9211931013F0007DB78 /* UINavigationController+ZSTAdditions.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -418,6 +426,7 @@
 				BAD1DB3A192D35B100DF8FCE /* ZSTAppDelegate.m in Sources */,
 				BAA9F904192FD9150007DB78 /* ZSTWildcardGestureRecognizer.m in Sources */,
 				BAA9F9181930A7170007DB78 /* NSAttributedString+ZSTCreationAdditions.m in Sources */,
+				BAA9F9221931013F0007DB78 /* UINavigationController+ZSTAdditions.m in Sources */,
 				BAA9F91D1930ECE10007DB78 /* NSString+ZSTValidations.m in Sources */,
 				BAD1DB36192D35B100DF8FCE /* main.m in Sources */,
 			);
@@ -433,6 +442,7 @@
 				BAAAFF0B192FA7DC008145CA /* ZSTViewFrameAdditionsSpec.m in Sources */,
 				BAD1DB5E192DDA0800DF8FCE /* ZSTDictionaryKeyValueExtensionsSpec.m in Sources */,
 				BAA9F91A1930AB0F0007DB78 /* ZSTAttributedStringCreationAdditionsSpec.m in Sources */,
+				BAA9F9241931026E0007DB78 /* ZSTNavigationControllerAdditionsSpec.m in Sources */,
 				BAA9F8FE192FC61C0007DB78 /* ZSTExceptionAbstractClassAdditionsSpec.m in Sources */,
 				BAA9F901192FCFF20007DB78 /* ZSTRGBSpec.m in Sources */,
 				BAA9F9151930A33E0007DB78 /* ZSTMutableAttributedStringAdditionsSpec.m in Sources */,
