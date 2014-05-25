@@ -9,20 +9,20 @@
 #import <UIKit/UIKit.h>
 
 /**
- *  The block to be called when a touch event occur.
- *
- *  @param touches A set of UITouch instances.
- *  @param event   A UIEvent object representing the event to which the touches belong.
+ The block to be called when a touch event occur.
+ 
+ @param touches A set of UITouch instances.
+ @param event   A UIEvent object representing the event to which the touches belong.
  */
 typedef void (^ZSTTouchesEventBlock)(NSSet *touches, UIEvent *event);
 
 /**
- *  The block to be used to determine if a gesture recognizer should receive touch.
- *
- *  @param touch A UITouch object from the touchesBegan callback.
- *  @param view  The innermost view that received the touch. 
- *
- *  @return YES (the default) to allow the gesture recognizer to receive touch and NO to prevent touches.
+ The block to be used to determine if a gesture recognizer should receive touch.
+ 
+ @param touch A UITouch object from the touchesBegan callback.
+ @param view  The innermost view that received the touch.
+ 
+ @return YES (the default) to allow the gesture recognizer to receive touch and NO to prevent touches.
  */
 typedef BOOL (^ZSTShouldReceiveTouchInViewBlock)(UITouch *touch, UIView *view);
 
@@ -37,12 +37,12 @@ typedef BOOL (^ZSTShouldReceiveTouchInViewBlock)(UITouch *touch, UIView *view);
 - (void)setTouchesCancelledCallback:(ZSTTouchesEventBlock)touchesCancelledCallback;
 
 /**
- *  Sets ZSTShouldReceiveTouchInViewBlock to determine if the gesture recognizer should receive touch.
- *  Example usage: Check the view is descendant of another view to determine if gesture callbacks should be called.
- *
- *  @param shouldReceiveTouchInViewCallback The block to be used to determine if a gesture recognizer should receive touch.
- *
- *  @see ZSTTouchesEventBlock block
+ Sets ZSTShouldReceiveTouchInViewBlock to determine if the gesture recognizer should receive touch.
+ Example usage: Check the view is descendant of another view to determine if gesture callbacks should be called.
+ 
+ @see ZSTTouchesEventBlock
+ 
+ @param shouldReceiveTouchInViewCallback The block to be used to determine if a gesture recognizer should receive touch.
  */
 - (void)setShouldReceiveTouchInViewCallback:(ZSTShouldReceiveTouchInViewBlock)shouldReceiveTouchInViewCallback;
 

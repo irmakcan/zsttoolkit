@@ -11,12 +11,17 @@
 @interface NSAttributedString (ZSTCreationAdditions)
 
 /**
- *  Creates a new AttributedString from given text to attributes mappings by appending them in order.
- *
- *  @param textToAttributesMappings An array which includes texts and attributes needed to generate attributed string.
- *                                  Example: @[@{"Hello, ": @{NSFontAttributeName: font}, @{"World!": @{NSFontAttributeName: boldFont}}]
- *
- *  @return An NSAttributedString object consisting of the strings with attributes appended with each other.
+ Creates a new AttributedString from given text to attributes mappings by appending them in order.
+ 
+ Mapping Example:
+ @code @[
+  @{"Hello, " : @{NSFontAttributeName: font},
+  @{"World!"  : @{NSFontAttributeName: boldFont}}
+ ] @endcode
+ 
+ @param textToAttributesMappings An array which includes texts and attributes needed to generate attributed string.
+ 
+ @return An NSAttributedString object consisting of the strings with attributes appended with each other.
  */
 + (NSAttributedString *)zst_attributedStringFromTextToAttributesMappings:(NSArray *)textToAttributesMappings;
 

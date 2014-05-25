@@ -52,7 +52,7 @@ typedef void (^ZSTAbsoluteTimerUpdateCallback)(NSTimeInterval remainingTime);
 
 /**
  Calls the designated initializer with converting the time interval to date.
-
+ 
  @see -initWithEndingDate:updateInterval:updateCallback:completion:
  
  @param timeInterval   The number of seconds relative to the date of creation.
