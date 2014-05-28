@@ -29,6 +29,8 @@
 		BAA9F9241931026E0007DB78 /* ZSTNavigationControllerAdditionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F9231931026E0007DB78 /* ZSTNavigationControllerAdditionsSpec.m */; };
 		BAA9F92719310E570007DB78 /* ZSTAbsoluteTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F92619310E570007DB78 /* ZSTAbsoluteTimer.m */; };
 		BAA9F92919310E690007DB78 /* ZSTAbsoluteTimerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F92819310E690007DB78 /* ZSTAbsoluteTimerSpec.m */; };
+		BAA9F92C193539A00007DB78 /* UIImage+ZSTCreationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F92B193539A00007DB78 /* UIImage+ZSTCreationAdditions.m */; };
+		BAA9F92E19353A290007DB78 /* ZSTImageCreationAdditionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F92D19353A290007DB78 /* ZSTImageCreationAdditionsSpec.m */; };
 		BAAAFF0B192FA7DC008145CA /* ZSTViewFrameAdditionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAAFF0A192FA7DC008145CA /* ZSTViewFrameAdditionsSpec.m */; };
 		BAD1DB2A192D35B100DF8FCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD1DB29192D35B100DF8FCE /* Foundation.framework */; };
 		BAD1DB2C192D35B100DF8FCE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD1DB2B192D35B100DF8FCE /* CoreGraphics.framework */; };
@@ -90,6 +92,9 @@
 		BAA9F92519310E570007DB78 /* ZSTAbsoluteTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSTAbsoluteTimer.h; sourceTree = "<group>"; };
 		BAA9F92619310E570007DB78 /* ZSTAbsoluteTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTAbsoluteTimer.m; sourceTree = "<group>"; };
 		BAA9F92819310E690007DB78 /* ZSTAbsoluteTimerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTAbsoluteTimerSpec.m; sourceTree = "<group>"; };
+		BAA9F92A193539A00007DB78 /* UIImage+ZSTCreationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZSTCreationAdditions.h"; sourceTree = "<group>"; };
+		BAA9F92B193539A00007DB78 /* UIImage+ZSTCreationAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZSTCreationAdditions.m"; sourceTree = "<group>"; };
+		BAA9F92D19353A290007DB78 /* ZSTImageCreationAdditionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTImageCreationAdditionsSpec.m; sourceTree = "<group>"; };
 		BAAAFF0A192FA7DC008145CA /* ZSTViewFrameAdditionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTViewFrameAdditionsSpec.m; sourceTree = "<group>"; };
 		BAD1DB26192D35B100DF8FCE /* ZSTToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSTToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD1DB29192D35B100DF8FCE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -227,6 +232,7 @@
 				BAA9F91E1930ED770007DB78 /* ZSTStringValidationsSpec.m */,
 				BAA9F9231931026E0007DB78 /* ZSTNavigationControllerAdditionsSpec.m */,
 				BAA9F92819310E690007DB78 /* ZSTAbsoluteTimerSpec.m */,
+				BAA9F92D19353A290007DB78 /* ZSTImageCreationAdditionsSpec.m */,
 			);
 			path = ZSTToolkitTests;
 			sourceTree = "<group>";
@@ -273,6 +279,8 @@
 				BAA9F91C1930ECE10007DB78 /* NSString+ZSTValidations.m */,
 				BAA9F9201931013F0007DB78 /* UINavigationController+ZSTAdditions.h */,
 				BAA9F9211931013F0007DB78 /* UINavigationController+ZSTAdditions.m */,
+				BAA9F92A193539A00007DB78 /* UIImage+ZSTCreationAdditions.h */,
+				BAA9F92B193539A00007DB78 /* UIImage+ZSTCreationAdditions.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -427,6 +435,7 @@
 			files = (
 				BAA9F92719310E570007DB78 /* ZSTAbsoluteTimer.m in Sources */,
 				BA558204192FA58E003E643C /* UIView+ZSTFrameAdditions.m in Sources */,
+				BAA9F92C193539A00007DB78 /* UIImage+ZSTCreationAdditions.m in Sources */,
 				BAD1DB5C192D53A400DF8FCE /* NSDictionary+ZSTKeyValueExtensions.m in Sources */,
 				BAA9F913193013870007DB78 /* NSMutableAttributedString+ZSTAdditions.m in Sources */,
 				BAA9F90C192FFDF50007DB78 /* ZSTWildCardGestureTestViewController.m in Sources */,
@@ -454,6 +463,7 @@
 				BAA9F91A1930AB0F0007DB78 /* ZSTAttributedStringCreationAdditionsSpec.m in Sources */,
 				BAA9F9241931026E0007DB78 /* ZSTNavigationControllerAdditionsSpec.m in Sources */,
 				BAA9F8FE192FC61C0007DB78 /* ZSTExceptionAbstractClassAdditionsSpec.m in Sources */,
+				BAA9F92E19353A290007DB78 /* ZSTImageCreationAdditionsSpec.m in Sources */,
 				BAA9F901192FCFF20007DB78 /* ZSTRGBSpec.m in Sources */,
 				BAA9F9151930A33E0007DB78 /* ZSTMutableAttributedStringAdditionsSpec.m in Sources */,
 			);
