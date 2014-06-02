@@ -37,11 +37,6 @@
                BlueprintName = "ZSTToolkitTests"
                ReferencedContainer = "container:ZSTToolkit.xcodeproj">
             </BuildableReference>
-            <SkippedTests>
-               <Test
-                  Identifier = "ZSTAbsoluteTimerSpec">
-               </Test>
-            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>
