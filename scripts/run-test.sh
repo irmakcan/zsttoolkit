@@ -3,7 +3,7 @@
 xcodebuild clean test\
   -sdk iphonesimulator \
   -workspace ZSTToolkit.xcworkspace \
-  -scheme ZSTToolkitTests\
+  -scheme ZSTToolkit\
   -configuration Debug \
   OBJROOT=build \
   ONLY_ACTIVE_ARCH=NO \
