@@ -1,10 +1,11 @@
 language: objective-c
 before_install:
+  - export LANG=en_US.UTF-8
   - sudo easy_install cpp-coveralls
   - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
   - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
   - pod install
 script:
-  - ./script/run-test.sh | xcpretty
+  - ./scripts/run-test.sh | xcpretty
 after_success:
   - coveralls -e Pods -e ZSTToolkitTests

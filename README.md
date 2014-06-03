@@ -1,7 +1,7 @@
 ZSTToolkit
 ----------
 
-[![Build Status](https://travis-ci.org/ZSTToolkit/ZSTToolkit.svg)](https://travis-ci.org/ZSTToolkit/ZSTToolkit)
+[![Build Status](https://travis-ci.org/irmakcan/zsttoolkit.svg?branch=master)](https://travis-ci.org/irmakcan/zsttoolkit) [![Coverage Status](https://coveralls.io/repos/irmakcan/zsttoolkit/badge.png?branch=master)](https://coveralls.io/r/irmakcan/zsttoolkit?branch=master)
 
 ZSTToolkit includes a set of utility and helper classes to aid iOS development.
 
