@@ -8,4 +8,4 @@ before_install:
 script:
   - ./scripts/run-test.sh | xcpretty
 after_success:
-  - coveralls -e Pods -e ZSTToolkitTests
+  - coveralls -e Pods -e ZSTToolkitTests -e ZSTToolkitExample
