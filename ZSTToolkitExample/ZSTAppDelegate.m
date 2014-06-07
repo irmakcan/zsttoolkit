@@ -8,6 +8,7 @@
 
 #import "ZSTAppDelegate.h"
 #import "ZSTWildCardGestureTestViewController.h"
+#import "ZSTToolkit.h"
 
 @implementation ZSTAppDelegate
 

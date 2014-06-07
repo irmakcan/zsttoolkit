@@ -71,7 +71,9 @@
 		BA558200192F6773003E643C /* ZSTMutableDictionaryKeyValueExtensionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTMutableDictionaryKeyValueExtensionsSpec.m; sourceTree = "<group>"; };
 		BA558202192FA58E003E643C /* UIView+ZSTFrameAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZSTFrameAdditions.h"; sourceTree = "<group>"; };
 		BA558203192FA58E003E643C /* UIView+ZSTFrameAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZSTFrameAdditions.m"; sourceTree = "<group>"; };
+		BA63C3281943B99C0095BBBE /* ZSTToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSTToolkit.h; sourceTree = "<group>"; };
 		BA8463BD192E9E8900622332 /* Warnings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
+		BAA887B81943B7DE00618BAF /* ZSTCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSTCategories.h; sourceTree = "<group>"; };
 		BAA9F8FA192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSException+ZSTAbstractClassAdditions.h"; sourceTree = "<group>"; };
 		BAA9F8FB192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSException+ZSTAbstractClassAdditions.m"; sourceTree = "<group>"; };
 		BAA9F8FD192FC61C0007DB78 /* ZSTExceptionAbstractClassAdditionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTExceptionAbstractClassAdditionsSpec.m; sourceTree = "<group>"; };
@@ -278,12 +280,13 @@
 			isa = PBXGroup;
 			children = (
 				BAD1DB59192D535A00DF8FCE /* Categories */,
-				BA5581FC192F605C003E643C /* ZSTJSONObjectInitializationProtocol.h */,
-				BAA9F8FF192FCFA40007DB78 /* ZSTRGB.h */,
-				BAA9F902192FD9150007DB78 /* ZSTWildcardGestureRecognizer.h */,
-				BAA9F903192FD9150007DB78 /* ZSTWildcardGestureRecognizer.m */,
 				BAA9F92519310E570007DB78 /* ZSTAbsoluteTimer.h */,
 				BAA9F92619310E570007DB78 /* ZSTAbsoluteTimer.m */,
+				BA5581FC192F605C003E643C /* ZSTJSONObjectInitializationProtocol.h */,
+				BAA9F8FF192FCFA40007DB78 /* ZSTRGB.h */,
+				BA63C3281943B99C0095BBBE /* ZSTToolkit.h */,
+				BAA9F902192FD9150007DB78 /* ZSTWildcardGestureRecognizer.h */,
+				BAA9F903192FD9150007DB78 /* ZSTWildcardGestureRecognizer.m */,
 			);
 			path = ZSTToolkit;
 			sourceTree = "<group>";
@@ -291,26 +294,27 @@
 		BAD1DB59192D535A00DF8FCE /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				BAA9F9161930A7170007DB78 /* NSAttributedString+ZSTCreationAdditions.h */,
+				BAA9F9171930A7170007DB78 /* NSAttributedString+ZSTCreationAdditions.m */,
 				BAD1DB5A192D53A400DF8FCE /* NSDictionary+ZSTKeyValueExtensions.h */,
 				BAD1DB5B192D53A400DF8FCE /* NSDictionary+ZSTKeyValueExtensions.m */,
-				BA5581FD192F66D5003E643C /* NSMutableDictionary+ZSTKeyValueExtensions.h */,
-				BA5581FE192F66D5003E643C /* NSMutableDictionary+ZSTKeyValueExtensions.m */,
-				BA558202192FA58E003E643C /* UIView+ZSTFrameAdditions.h */,
-				BA558203192FA58E003E643C /* UIView+ZSTFrameAdditions.m */,
 				BAA9F8FA192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.h */,
 				BAA9F8FB192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.m */,
 				BAA9F911193013870007DB78 /* NSMutableAttributedString+ZSTAdditions.h */,
 				BAA9F912193013870007DB78 /* NSMutableAttributedString+ZSTAdditions.m */,
-				BAA9F9161930A7170007DB78 /* NSAttributedString+ZSTCreationAdditions.h */,
-				BAA9F9171930A7170007DB78 /* NSAttributedString+ZSTCreationAdditions.m */,
+				BA5581FD192F66D5003E643C /* NSMutableDictionary+ZSTKeyValueExtensions.h */,
+				BA5581FE192F66D5003E643C /* NSMutableDictionary+ZSTKeyValueExtensions.m */,
 				BAA9F91B1930ECE10007DB78 /* NSString+ZSTValidations.h */,
 				BAA9F91C1930ECE10007DB78 /* NSString+ZSTValidations.m */,
-				BAA9F9201931013F0007DB78 /* UINavigationController+ZSTAdditions.h */,
-				BAA9F9211931013F0007DB78 /* UINavigationController+ZSTAdditions.m */,
 				BAA9F92A193539A00007DB78 /* UIImage+ZSTCreationAdditions.h */,
 				BAA9F92B193539A00007DB78 /* UIImage+ZSTCreationAdditions.m */,
+				BAA9F9201931013F0007DB78 /* UINavigationController+ZSTAdditions.h */,
+				BAA9F9211931013F0007DB78 /* UINavigationController+ZSTAdditions.m */,
+				BA558202192FA58E003E643C /* UIView+ZSTFrameAdditions.h */,
+				BA558203192FA58E003E643C /* UIView+ZSTFrameAdditions.m */,
 				BAAA92CA193B85E7002F09EC /* UIView+ZSTNibAdditions.h */,
 				BAAA92CB193B85E7002F09EC /* UIView+ZSTNibAdditions.m */,
+				BAA887B81943B7DE00618BAF /* ZSTCategories.h */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
