@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "ZSTToolkit"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "A set of classes/categories to make your iOS life easier."
 
   s.description  = %{
