@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E906F311CC983680058BFA5 /* ZSTToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E906F301CC983680058BFA5 /* ZSTToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E906F431CC983680058BFA5 /* ZSTToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E906F2E1CC983670058BFA5 /* ZSTToolkit.framework */; };
+		4E906F441CC983680058BFA5 /* ZSTToolkit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4E906F2E1CC983670058BFA5 /* ZSTToolkit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		52EA50C6D36140DBABE1AFEB /* libPods-ZSTToolkitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0775BC94BF194213AD1D0B19 /* libPods-ZSTToolkitTests.a */; };
 		BA5581FF192F66D5003E643C /* NSMutableDictionary+ZSTKeyValueExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5581FE192F66D5003E643C /* NSMutableDictionary+ZSTKeyValueExtensions.m */; };
 		BA558201192F6773003E643C /* ZSTMutableDictionaryKeyValueExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BA558200192F6773003E643C /* ZSTMutableDictionaryKeyValueExtensionsSpec.m */; };
@@ -54,6 +57,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4E906F411CC983680058BFA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAD1DB1E192D35B100DF8FCE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E906F2D1CC983670058BFA5;
+			remoteInfo = ZSTToolkit;
+		};
 		BAD1DB46192D35B200DF8FCE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BAD1DB1E192D35B100DF8FCE /* Project object */;
@@ -63,8 +73,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4E906F481CC983680058BFA5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4E906F441CC983680058BFA5 /* ZSTToolkit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0775BC94BF194213AD1D0B19 /* libPods-ZSTToolkitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZSTToolkitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E906F2E1CC983670058BFA5 /* ZSTToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZSTToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E906F301CC983680058BFA5 /* ZSTToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSTToolkit.h; sourceTree = "<group>"; };
+		4E906F321CC983680058BFA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA5581FC192F605C003E643C /* ZSTJSONObjectInitializationProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSTJSONObjectInitializationProtocol.h; sourceTree = "<group>"; };
 		BA5581FD192F66D5003E643C /* NSMutableDictionary+ZSTKeyValueExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+ZSTKeyValueExtensions.h"; sourceTree = "<group>"; };
 		BA5581FE192F66D5003E643C /* NSMutableDictionary+ZSTKeyValueExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+ZSTKeyValueExtensions.m"; sourceTree = "<group>"; };
@@ -112,7 +139,7 @@
 		BAAA92D6193D2A92002F09EC /* ZSTNibTestOtherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSTNibTestOtherView.h; sourceTree = "<group>"; };
 		BAAA92D7193D2A92002F09EC /* ZSTNibTestOtherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTNibTestOtherView.m; sourceTree = "<group>"; };
 		BAAAFF0A192FA7DC008145CA /* ZSTViewFrameAdditionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTViewFrameAdditionsSpec.m; sourceTree = "<group>"; };
-		BAD1DB26192D35B100DF8FCE /* ZSTToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSTToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAD1DB26192D35B100DF8FCE /* ZSTToolkitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSTToolkitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD1DB29192D35B100DF8FCE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BAD1DB2B192D35B100DF8FCE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		BAD1DB2D192D35B100DF8FCE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -134,6 +161,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4E906F2A1CC983670058BFA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAD1DB23192D35B100DF8FCE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,6 +175,7 @@
 				BAD1DB2C192D35B100DF8FCE /* CoreGraphics.framework in Frameworks */,
 				BAD1DB2E192D35B100DF8FCE /* UIKit.framework in Frameworks */,
 				BAD1DB2A192D35B100DF8FCE /* Foundation.framework in Frameworks */,
+				4E906F431CC983680058BFA5 /* ZSTToolkit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +193,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E906F2F1CC983680058BFA5 /* ZSTToolkit */ = {
+			isa = PBXGroup;
+			children = (
+				4E906F301CC983680058BFA5 /* ZSTToolkit.h */,
+				4E906F321CC983680058BFA5 /* Info.plist */,
+			);
+			path = ZSTToolkit;
+			sourceTree = "<group>";
+		};
 		BAA9F907192FFD830007DB78 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +240,7 @@
 				BAD1DB58192D3EDA00DF8FCE /* ZSTToolkit */,
 				BAD1DB2F192D35B100DF8FCE /* ZSTToolkitExample */,
 				BAD1DB48192D35B200DF8FCE /* ZSTToolkitTests */,
+				4E906F2F1CC983680058BFA5 /* ZSTToolkit */,
 				BAD1DB28192D35B100DF8FCE /* Frameworks */,
 				BAD1DB27192D35B100DF8FCE /* Products */,
 				C6E8D366A5F04C969C2BCF16 /* Pods-ZSTToolkitTests.xcconfig */,
@@ -205,8 +250,9 @@
 		BAD1DB27192D35B100DF8FCE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BAD1DB26192D35B100DF8FCE /* ZSTToolkit.app */,
+				BAD1DB26192D35B100DF8FCE /* ZSTToolkitApp.app */,
 				BAD1DB41192D35B200DF8FCE /* ZSTToolkitTests.xctest */,
+				4E906F2E1CC983670058BFA5 /* ZSTToolkit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -321,15 +367,26 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		4E906F2B1CC983670058BFA5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E906F311CC983680058BFA5 /* ZSTToolkit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		BAD1DB25192D35B100DF8FCE /* ZSTToolkit */ = {
+		4E906F2D1CC983670058BFA5 /* ZSTToolkit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BAD1DB52192D35B200DF8FCE /* Build configuration list for PBXNativeTarget "ZSTToolkit" */;
+			buildConfigurationList = 4E906F451CC983680058BFA5 /* Build configuration list for PBXNativeTarget "ZSTToolkit" */;
 			buildPhases = (
-				BAD1DB22192D35B100DF8FCE /* Sources */,
-				BAD1DB23192D35B100DF8FCE /* Frameworks */,
-				BAD1DB24192D35B100DF8FCE /* Resources */,
-				BA8463BA192E966C00622332 /* Export Coverage */,
+				4E906F291CC983670058BFA5 /* Sources */,
+				4E906F2A1CC983670058BFA5 /* Frameworks */,
+				4E906F2B1CC983670058BFA5 /* Headers */,
+				4E906F2C1CC983670058BFA5 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -337,7 +394,27 @@
 			);
 			name = ZSTToolkit;
 			productName = ZSTToolkit;
-			productReference = BAD1DB26192D35B100DF8FCE /* ZSTToolkit.app */;
+			productReference = 4E906F2E1CC983670058BFA5 /* ZSTToolkit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BAD1DB25192D35B100DF8FCE /* ZSTToolkitApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAD1DB52192D35B200DF8FCE /* Build configuration list for PBXNativeTarget "ZSTToolkitApp" */;
+			buildPhases = (
+				BAD1DB22192D35B100DF8FCE /* Sources */,
+				BAD1DB23192D35B100DF8FCE /* Frameworks */,
+				BAD1DB24192D35B100DF8FCE /* Resources */,
+				BA8463BA192E966C00622332 /* Export Coverage */,
+				4E906F481CC983680058BFA5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E906F421CC983680058BFA5 /* PBXTargetDependency */,
+			);
+			name = ZSTToolkitApp;
+			productName = ZSTToolkit;
+			productReference = BAD1DB26192D35B100DF8FCE /* ZSTToolkitApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BAD1DB40192D35B200DF8FCE /* ZSTToolkitTests */ = {
@@ -370,6 +447,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Irmak Can Ozsut";
 				TargetAttributes = {
+					4E906F2D1CC983670058BFA5 = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					BAD1DB40192D35B200DF8FCE = {
 						TestTargetID = BAD1DB25192D35B100DF8FCE;
 					};
@@ -387,13 +467,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BAD1DB25192D35B100DF8FCE /* ZSTToolkit */,
+				BAD1DB25192D35B100DF8FCE /* ZSTToolkitApp */,
 				BAD1DB40192D35B200DF8FCE /* ZSTToolkitTests */,
+				4E906F2D1CC983670058BFA5 /* ZSTToolkit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4E906F2C1CC983670058BFA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAD1DB24192D35B100DF8FCE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -465,6 +553,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4E906F291CC983670058BFA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAD1DB22192D35B100DF8FCE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -512,9 +607,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4E906F421CC983680058BFA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E906F2D1CC983670058BFA5 /* ZSTToolkit */;
+			targetProxy = 4E906F411CC983680058BFA5 /* PBXContainerItemProxy */;
+		};
 		BAD1DB47192D35B200DF8FCE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BAD1DB25192D35B100DF8FCE /* ZSTToolkit */;
+			target = BAD1DB25192D35B100DF8FCE /* ZSTToolkitApp */;
 			targetProxy = BAD1DB46192D35B200DF8FCE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -539,6 +639,58 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4E906F461CC983680058BFA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = ZSTToolkit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irmakcan.ZSTToolkit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4E906F471CC983680058BFA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = ZSTToolkit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.irmakcan.ZSTToolkit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		BAD1DB50192D35B200DF8FCE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -573,7 +725,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -606,7 +758,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -622,6 +774,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZSTToolkitExample/ZSTToolkit-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/ZSTToolkitExample/ZSTToolkit-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -635,6 +788,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZSTToolkitExample/ZSTToolkit-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/ZSTToolkitExample/ZSTToolkit-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -685,6 +839,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4E906F451CC983680058BFA5 /* Build configuration list for PBXNativeTarget "ZSTToolkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E906F461CC983680058BFA5 /* Debug */,
+				4E906F471CC983680058BFA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		BAD1DB21192D35B100DF8FCE /* Build configuration list for PBXProject "ZSTToolkit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -694,7 +856,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BAD1DB52192D35B200DF8FCE /* Build configuration list for PBXNativeTarget "ZSTToolkit" */ = {
+		BAD1DB52192D35B200DF8FCE /* Build configuration list for PBXNativeTarget "ZSTToolkitApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BAD1DB53192D35B200DF8FCE /* Debug */,
