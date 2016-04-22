@@ -7,6 +7,7 @@
 //
 
 #import "ZSTAbsoluteTimer.h"
+#import <UIKit/UIKit.h>
 
 static const NSTimeInterval ZSTAbsoluteTimerDefaultUpdateInterval = 1.0;
 
