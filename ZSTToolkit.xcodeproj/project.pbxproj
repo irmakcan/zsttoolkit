@@ -25,6 +25,18 @@
 		4E906F5E1CC98E9A0058BFA5 /* ZSTJSONObjectInitializationProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5581FC192F605C003E643C /* ZSTJSONObjectInitializationProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E906F5F1CC98E9A0058BFA5 /* ZSTRGB.h in Headers */ = {isa = PBXBuildFile; fileRef = BAA9F8FF192FCFA40007DB78 /* ZSTRGB.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E906F601CC98E9A0058BFA5 /* ZSTWildcardGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = BAA9F902192FD9150007DB78 /* ZSTWildcardGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E906FB81CC9A2A10058BFA5 /* NSAttributedString+ZSTCreationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F9171930A7170007DB78 /* NSAttributedString+ZSTCreationAdditions.m */; };
+		4E906FB91CC9A2A10058BFA5 /* NSDictionary+ZSTKeyValueExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD1DB5B192D53A400DF8FCE /* NSDictionary+ZSTKeyValueExtensions.m */; };
+		4E906FBA1CC9A2A10058BFA5 /* NSException+ZSTAbstractClassAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F8FB192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.m */; };
+		4E906FBB1CC9A2A10058BFA5 /* NSMutableAttributedString+ZSTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F912193013870007DB78 /* NSMutableAttributedString+ZSTAdditions.m */; };
+		4E906FBC1CC9A2A10058BFA5 /* NSMutableDictionary+ZSTKeyValueExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5581FE192F66D5003E643C /* NSMutableDictionary+ZSTKeyValueExtensions.m */; };
+		4E906FBD1CC9A2A10058BFA5 /* NSString+ZSTValidations.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F91C1930ECE10007DB78 /* NSString+ZSTValidations.m */; };
+		4E906FBE1CC9A2A10058BFA5 /* UIImage+ZSTCreationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F92B193539A00007DB78 /* UIImage+ZSTCreationAdditions.m */; };
+		4E906FBF1CC9A2A10058BFA5 /* UINavigationController+ZSTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F9211931013F0007DB78 /* UINavigationController+ZSTAdditions.m */; };
+		4E906FC01CC9A2A10058BFA5 /* UIView+ZSTFrameAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BA558203192FA58E003E643C /* UIView+ZSTFrameAdditions.m */; };
+		4E906FC11CC9A2A10058BFA5 /* UIView+ZSTNibAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAA92CB193B85E7002F09EC /* UIView+ZSTNibAdditions.m */; };
+		4E906FC21CC9A2A10058BFA5 /* ZSTAbsoluteTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F92619310E570007DB78 /* ZSTAbsoluteTimer.m */; };
+		4E906FC31CC9A2A10058BFA5 /* ZSTWildcardGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F903192FD9150007DB78 /* ZSTWildcardGestureRecognizer.m */; };
 		52EA50C6D36140DBABE1AFEB /* libPods-ZSTToolkitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0775BC94BF194213AD1D0B19 /* libPods-ZSTToolkitTests.a */; };
 		BA5581FF192F66D5003E643C /* NSMutableDictionary+ZSTKeyValueExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5581FE192F66D5003E643C /* NSMutableDictionary+ZSTKeyValueExtensions.m */; };
 		BA558201192F6773003E643C /* ZSTMutableDictionaryKeyValueExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BA558200192F6773003E643C /* ZSTMutableDictionaryKeyValueExtensionsSpec.m */; };
@@ -587,6 +599,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E906FBD1CC9A2A10058BFA5 /* NSString+ZSTValidations.m in Sources */,
+				4E906FC21CC9A2A10058BFA5 /* ZSTAbsoluteTimer.m in Sources */,
+				4E906FBB1CC9A2A10058BFA5 /* NSMutableAttributedString+ZSTAdditions.m in Sources */,
+				4E906FC31CC9A2A10058BFA5 /* ZSTWildcardGestureRecognizer.m in Sources */,
+				4E906FBE1CC9A2A10058BFA5 /* UIImage+ZSTCreationAdditions.m in Sources */,
+				4E906FBC1CC9A2A10058BFA5 /* NSMutableDictionary+ZSTKeyValueExtensions.m in Sources */,
+				4E906FBA1CC9A2A10058BFA5 /* NSException+ZSTAbstractClassAdditions.m in Sources */,
+				4E906FC01CC9A2A10058BFA5 /* UIView+ZSTFrameAdditions.m in Sources */,
+				4E906FBF1CC9A2A10058BFA5 /* UINavigationController+ZSTAdditions.m in Sources */,
+				4E906FB91CC9A2A10058BFA5 /* NSDictionary+ZSTKeyValueExtensions.m in Sources */,
+				4E906FC11CC9A2A10058BFA5 /* UIView+ZSTNibAdditions.m in Sources */,
+				4E906FB81CC9A2A10058BFA5 /* NSAttributedString+ZSTCreationAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
