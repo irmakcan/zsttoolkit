@@ -37,7 +37,6 @@
 		4E906FC11CC9A2A10058BFA5 /* UIView+ZSTNibAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAA92CB193B85E7002F09EC /* UIView+ZSTNibAdditions.m */; };
 		4E906FC21CC9A2A10058BFA5 /* ZSTAbsoluteTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F92619310E570007DB78 /* ZSTAbsoluteTimer.m */; };
 		4E906FC31CC9A2A10058BFA5 /* ZSTWildcardGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F903192FD9150007DB78 /* ZSTWildcardGestureRecognizer.m */; };
-		52EA50C6D36140DBABE1AFEB /* libPods-ZSTToolkitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0775BC94BF194213AD1D0B19 /* libPods-ZSTToolkitTests.a */; };
 		BA5581FF192F66D5003E643C /* NSMutableDictionary+ZSTKeyValueExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5581FE192F66D5003E643C /* NSMutableDictionary+ZSTKeyValueExtensions.m */; };
 		BA558201192F6773003E643C /* ZSTMutableDictionaryKeyValueExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BA558200192F6773003E643C /* ZSTMutableDictionaryKeyValueExtensionsSpec.m */; };
 		BA558204192FA58E003E643C /* UIView+ZSTFrameAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BA558203192FA58E003E643C /* UIView+ZSTFrameAdditions.m */; };
@@ -80,6 +79,7 @@
 		BAD1DB4D192D35B200DF8FCE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAD1DB4B192D35B200DF8FCE /* InfoPlist.strings */; };
 		BAD1DB5C192D53A400DF8FCE /* NSDictionary+ZSTKeyValueExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD1DB5B192D53A400DF8FCE /* NSDictionary+ZSTKeyValueExtensions.m */; };
 		BAD1DB5E192DDA0800DF8FCE /* ZSTDictionaryKeyValueExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD1DB5D192DDA0800DF8FCE /* ZSTDictionaryKeyValueExtensionsSpec.m */; };
+		F2F28A431F67BAEACCD91794 /* libPods-ZSTToolkitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EF8F1EE4B607D634B6064C2 /* libPods-ZSTToolkitTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,10 +114,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0775BC94BF194213AD1D0B19 /* libPods-ZSTToolkitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZSTToolkitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DF01A2EA9119A8E87EF82C6 /* Pods-ZSTToolkitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZSTToolkitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZSTToolkitTests/Pods-ZSTToolkitTests.release.xcconfig"; sourceTree = "<group>"; };
 		4E906F2E1CC983670058BFA5 /* ZSTToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZSTToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E906F301CC983680058BFA5 /* ZSTToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSTToolkit.h; sourceTree = "<group>"; };
 		4E906F321CC983680058BFA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EF8F1EE4B607D634B6064C2 /* libPods-ZSTToolkitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZSTToolkitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5581FC192F605C003E643C /* ZSTJSONObjectInitializationProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSTJSONObjectInitializationProtocol.h; sourceTree = "<group>"; };
 		BA5581FD192F66D5003E643C /* NSMutableDictionary+ZSTKeyValueExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+ZSTKeyValueExtensions.h"; sourceTree = "<group>"; };
 		BA5581FE192F66D5003E643C /* NSMutableDictionary+ZSTKeyValueExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+ZSTKeyValueExtensions.m"; sourceTree = "<group>"; };
@@ -183,7 +184,7 @@
 		BAD1DB5A192D53A400DF8FCE /* NSDictionary+ZSTKeyValueExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ZSTKeyValueExtensions.h"; sourceTree = "<group>"; };
 		BAD1DB5B192D53A400DF8FCE /* NSDictionary+ZSTKeyValueExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ZSTKeyValueExtensions.m"; sourceTree = "<group>"; };
 		BAD1DB5D192DDA0800DF8FCE /* ZSTDictionaryKeyValueExtensionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSTDictionaryKeyValueExtensionsSpec.m; sourceTree = "<group>"; };
-		C6E8D366A5F04C969C2BCF16 /* Pods-ZSTToolkitTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZSTToolkitTests.xcconfig"; path = "Pods/Pods-ZSTToolkitTests.xcconfig"; sourceTree = "<group>"; };
+		E1212D90B7B4F08CD013FCF2 /* Pods-ZSTToolkitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZSTToolkitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZSTToolkitTests/Pods-ZSTToolkitTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,7 +213,7 @@
 				BAD1DB43192D35B200DF8FCE /* XCTest.framework in Frameworks */,
 				BAD1DB45192D35B200DF8FCE /* UIKit.framework in Frameworks */,
 				BAD1DB44192D35B200DF8FCE /* Foundation.framework in Frameworks */,
-				52EA50C6D36140DBABE1AFEB /* libPods-ZSTToolkitTests.a in Frameworks */,
+				F2F28A431F67BAEACCD91794 /* libPods-ZSTToolkitTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +227,15 @@
 				4E906F321CC983680058BFA5 /* Info.plist */,
 			);
 			path = ZSTToolkit;
+			sourceTree = "<group>";
+		};
+		B2988E9F311583F2A4A0A1A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1212D90B7B4F08CD013FCF2 /* Pods-ZSTToolkitTests.debug.xcconfig */,
+				0DF01A2EA9119A8E87EF82C6 /* Pods-ZSTToolkitTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		BAA9F907192FFD830007DB78 /* Classes */ = {
@@ -269,7 +279,7 @@
 				4E906F2F1CC983680058BFA5 /* ZSTToolkit */,
 				BAD1DB28192D35B100DF8FCE /* Frameworks */,
 				BAD1DB27192D35B100DF8FCE /* Products */,
-				C6E8D366A5F04C969C2BCF16 /* Pods-ZSTToolkitTests.xcconfig */,
+				B2988E9F311583F2A4A0A1A4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -290,7 +300,7 @@
 				BAD1DB2B192D35B100DF8FCE /* CoreGraphics.framework */,
 				BAD1DB2D192D35B100DF8FCE /* UIKit.framework */,
 				BAD1DB42192D35B200DF8FCE /* XCTest.framework */,
-				0775BC94BF194213AD1D0B19 /* libPods-ZSTToolkitTests.a */,
+				7EF8F1EE4B607D634B6064C2 /* libPods-ZSTToolkitTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -462,11 +472,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAD1DB55192D35B200DF8FCE /* Build configuration list for PBXNativeTarget "ZSTToolkitTests" */;
 			buildPhases = (
-				F3F94B45A3F84011870ECBC2 /* Check Pods Manifest.lock */,
+				F9F9F7843CEA4CF9E7E11B7B /* [CP] Check Pods Manifest.lock */,
 				BAD1DB3D192D35B200DF8FCE /* Sources */,
 				BAD1DB3E192D35B200DF8FCE /* Frameworks */,
 				BAD1DB3F192D35B200DF8FCE /* Resources */,
-				D4DA85A9C9FC4993A9BA6573 /* Copy Pods Resources */,
+				DE13E4468B25CD2818A827B1 /* [CP] Embed Pods Frameworks */,
+				C44C89699684ED728C8E3C0F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -495,6 +506,7 @@
 						ProvisioningStyle = Manual;
 					};
 					BAD1DB40192D35B200DF8FCE = {
+						ProvisioningStyle = Manual;
 						TestTargetID = BAD1DB25192D35B100DF8FCE;
 					};
 				};
@@ -563,34 +575,49 @@
 			shellPath = /bin/sh;
 			shellScript = XcodeCoverage/exportenv.sh;
 		};
-		D4DA85A9C9FC4993A9BA6573 /* Copy Pods Resources */ = {
+		C44C89699684ED728C8E3C0F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-ZSTToolkitTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZSTToolkitTests/Pods-ZSTToolkitTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F3F94B45A3F84011870ECBC2 /* Check Pods Manifest.lock */ = {
+		DE13E4468B25CD2818A827B1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZSTToolkitTests/Pods-ZSTToolkitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9F9F7843CEA4CF9E7E11B7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -868,9 +895,10 @@
 		};
 		BAD1DB56192D35B200DF8FCE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6E8D366A5F04C969C2BCF16 /* Pods-ZSTToolkitTests.xcconfig */;
+			baseConfigurationReference = E1212D90B7B4F08CD013FCF2 /* Pods-ZSTToolkitTests.debug.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZSTToolkit.app/ZSTToolkit";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -885,16 +913,17 @@
 				INFOPLIST_FILE = "ZSTToolkitTests/ZSTToolkitTests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.irmakcan.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZSTToolkitApp.app/ZSTToolkitApp";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
 		BAD1DB57192D35B200DF8FCE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6E8D366A5F04C969C2BCF16 /* Pods-ZSTToolkitTests.xcconfig */;
+			baseConfigurationReference = 0DF01A2EA9119A8E87EF82C6 /* Pods-ZSTToolkitTests.release.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZSTToolkit.app/ZSTToolkit";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -905,7 +934,7 @@
 				INFOPLIST_FILE = "ZSTToolkitTests/ZSTToolkitTests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.irmakcan.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZSTToolkitApp.app/ZSTToolkitApp";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;

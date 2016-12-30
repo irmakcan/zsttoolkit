@@ -38,16 +38,6 @@
                ReferencedContainer = "container:ZSTToolkit.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BAD1DB40192D35B200DF8FCE"
-               BuildableName = "ZSTToolkitTests.xctest"
-               BlueprintName = "ZSTToolkitTests"
-               ReferencedContainer = "container:ZSTToolkit.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
