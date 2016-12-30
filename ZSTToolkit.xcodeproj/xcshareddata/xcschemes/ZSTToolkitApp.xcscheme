@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0510"
+   LastUpgradeVersion = "0820"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4E906F361CC983680058BFA5"
+               BlueprintIdentifier = "BAD1DB40192D35B200DF8FCE"
                BuildableName = "ZSTToolkitTests.xctest"
                BlueprintName = "ZSTToolkitTests"
                ReferencedContainer = "container:ZSTToolkit.xcodeproj">

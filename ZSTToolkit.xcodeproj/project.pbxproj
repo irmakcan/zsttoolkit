@@ -41,7 +41,6 @@
 		BA5581FF192F66D5003E643C /* NSMutableDictionary+ZSTKeyValueExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5581FE192F66D5003E643C /* NSMutableDictionary+ZSTKeyValueExtensions.m */; };
 		BA558201192F6773003E643C /* ZSTMutableDictionaryKeyValueExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BA558200192F6773003E643C /* ZSTMutableDictionaryKeyValueExtensionsSpec.m */; };
 		BA558204192FA58E003E643C /* UIView+ZSTFrameAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BA558203192FA58E003E643C /* UIView+ZSTFrameAdditions.m */; };
-		BA8463BE192E9E8900622332 /* Warnings.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BA8463BD192E9E8900622332 /* Warnings.xcconfig */; };
 		BAA9F8FC192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F8FB192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.m */; };
 		BAA9F8FE192FC61C0007DB78 /* ZSTExceptionAbstractClassAdditionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F8FD192FC61C0007DB78 /* ZSTExceptionAbstractClassAdditionsSpec.m */; };
 		BAA9F901192FCFF20007DB78 /* ZSTRGBSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F900192FCFF20007DB78 /* ZSTRGBSpec.m */; };
@@ -486,11 +485,14 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = ZST;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Irmak Can Ozsut";
 				TargetAttributes = {
 					4E906F2D1CC983670058BFA5 = {
 						CreatedOnToolsVersion = 7.3;
+					};
+					BAD1DB25192D35B100DF8FCE = {
+						ProvisioningStyle = Manual;
 					};
 					BAD1DB40192D35B200DF8FCE = {
 						TestTargetID = BAD1DB25192D35B100DF8FCE;
@@ -541,7 +543,6 @@
 			files = (
 				BAAA92D4193D2749002F09EC /* ZSTNibTestView.xib in Resources */,
 				BAD1DB4D192D35B200DF8FCE /* InfoPlist.strings in Resources */,
-				BA8463BE192E9E8900622332 /* Warnings.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,6 +699,7 @@
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -724,6 +726,7 @@
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -758,15 +761,21 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -799,13 +808,18 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -825,10 +839,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZSTToolkitExample/ZSTToolkit-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/ZSTToolkitExample/ZSTToolkit-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.irmakcan.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -839,10 +855,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZSTToolkitExample/ZSTToolkit-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/ZSTToolkitExample/ZSTToolkit-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.irmakcan.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -865,6 +883,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "ZSTToolkitTests/ZSTToolkitTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.irmakcan.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -884,6 +903,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZSTToolkitExample/ZSTToolkit-Prefix.pch";
 				INFOPLIST_FILE = "ZSTToolkitTests/ZSTToolkitTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.irmakcan.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
