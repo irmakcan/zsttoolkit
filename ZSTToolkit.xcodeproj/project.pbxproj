@@ -37,29 +37,18 @@
 		4E906FC11CC9A2A10058BFA5 /* UIView+ZSTNibAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAA92CB193B85E7002F09EC /* UIView+ZSTNibAdditions.m */; };
 		4E906FC21CC9A2A10058BFA5 /* ZSTAbsoluteTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F92619310E570007DB78 /* ZSTAbsoluteTimer.m */; };
 		4E906FC31CC9A2A10058BFA5 /* ZSTWildcardGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F903192FD9150007DB78 /* ZSTWildcardGestureRecognizer.m */; };
-		BA5581FF192F66D5003E643C /* NSMutableDictionary+ZSTKeyValueExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5581FE192F66D5003E643C /* NSMutableDictionary+ZSTKeyValueExtensions.m */; };
 		BA558201192F6773003E643C /* ZSTMutableDictionaryKeyValueExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BA558200192F6773003E643C /* ZSTMutableDictionaryKeyValueExtensionsSpec.m */; };
-		BA558204192FA58E003E643C /* UIView+ZSTFrameAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BA558203192FA58E003E643C /* UIView+ZSTFrameAdditions.m */; };
-		BAA9F8FC192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F8FB192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.m */; };
 		BAA9F8FE192FC61C0007DB78 /* ZSTExceptionAbstractClassAdditionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F8FD192FC61C0007DB78 /* ZSTExceptionAbstractClassAdditionsSpec.m */; };
 		BAA9F901192FCFF20007DB78 /* ZSTRGBSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F900192FCFF20007DB78 /* ZSTRGBSpec.m */; };
-		BAA9F904192FD9150007DB78 /* ZSTWildcardGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F903192FD9150007DB78 /* ZSTWildcardGestureRecognizer.m */; };
 		BAA9F906192FE1750007DB78 /* ZSTWildcardGestureRecognizerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F905192FE1750007DB78 /* ZSTWildcardGestureRecognizerSpec.m */; };
 		BAA9F90C192FFDF50007DB78 /* ZSTWildCardGestureTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F90A192FFDF50007DB78 /* ZSTWildCardGestureTestViewController.m */; };
 		BAA9F90D192FFDF50007DB78 /* ZSTWildCardGestureTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAA9F90B192FFDF50007DB78 /* ZSTWildCardGestureTestViewController.xib */; };
-		BAA9F913193013870007DB78 /* NSMutableAttributedString+ZSTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F912193013870007DB78 /* NSMutableAttributedString+ZSTAdditions.m */; };
 		BAA9F9151930A33E0007DB78 /* ZSTMutableAttributedStringAdditionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F9141930A33E0007DB78 /* ZSTMutableAttributedStringAdditionsSpec.m */; };
-		BAA9F9181930A7170007DB78 /* NSAttributedString+ZSTCreationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F9171930A7170007DB78 /* NSAttributedString+ZSTCreationAdditions.m */; };
 		BAA9F91A1930AB0F0007DB78 /* ZSTAttributedStringCreationAdditionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F9191930AB0F0007DB78 /* ZSTAttributedStringCreationAdditionsSpec.m */; };
-		BAA9F91D1930ECE10007DB78 /* NSString+ZSTValidations.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F91C1930ECE10007DB78 /* NSString+ZSTValidations.m */; };
 		BAA9F91F1930ED770007DB78 /* ZSTStringValidationsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F91E1930ED770007DB78 /* ZSTStringValidationsSpec.m */; };
-		BAA9F9221931013F0007DB78 /* UINavigationController+ZSTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F9211931013F0007DB78 /* UINavigationController+ZSTAdditions.m */; };
 		BAA9F9241931026E0007DB78 /* ZSTNavigationControllerAdditionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F9231931026E0007DB78 /* ZSTNavigationControllerAdditionsSpec.m */; };
-		BAA9F92719310E570007DB78 /* ZSTAbsoluteTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F92619310E570007DB78 /* ZSTAbsoluteTimer.m */; };
 		BAA9F92919310E690007DB78 /* ZSTAbsoluteTimerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F92819310E690007DB78 /* ZSTAbsoluteTimerSpec.m */; };
-		BAA9F92C193539A00007DB78 /* UIImage+ZSTCreationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F92B193539A00007DB78 /* UIImage+ZSTCreationAdditions.m */; };
 		BAA9F92E19353A290007DB78 /* ZSTImageCreationAdditionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9F92D19353A290007DB78 /* ZSTImageCreationAdditionsSpec.m */; };
-		BAAA92CC193B85E7002F09EC /* UIView+ZSTNibAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAA92CB193B85E7002F09EC /* UIView+ZSTNibAdditions.m */; };
 		BAAA92CE193B8602002F09EC /* ZSTViewNibAdditionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAA92CD193B8602002F09EC /* ZSTViewNibAdditionsSpec.m */; };
 		BAAA92D2193D2736002F09EC /* ZSTNibTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAA92D1193D2736002F09EC /* ZSTNibTestView.m */; };
 		BAAA92D4193D2749002F09EC /* ZSTNibTestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAAA92D3193D2749002F09EC /* ZSTNibTestView.xib */; };
@@ -77,7 +66,6 @@
 		BAD1DB44192D35B200DF8FCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD1DB29192D35B100DF8FCE /* Foundation.framework */; };
 		BAD1DB45192D35B200DF8FCE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD1DB2D192D35B100DF8FCE /* UIKit.framework */; };
 		BAD1DB4D192D35B200DF8FCE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAD1DB4B192D35B200DF8FCE /* InfoPlist.strings */; };
-		BAD1DB5C192D53A400DF8FCE /* NSDictionary+ZSTKeyValueExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD1DB5B192D53A400DF8FCE /* NSDictionary+ZSTKeyValueExtensions.m */; };
 		BAD1DB5E192DDA0800DF8FCE /* ZSTDictionaryKeyValueExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD1DB5D192DDA0800DF8FCE /* ZSTDictionaryKeyValueExtensionsSpec.m */; };
 		F2F28A431F67BAEACCD91794 /* libPods-ZSTToolkitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EF8F1EE4B607D634B6064C2 /* libPods-ZSTToolkitTests.a */; };
 /* End PBXBuildFile section */
@@ -646,20 +634,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAA9F92719310E570007DB78 /* ZSTAbsoluteTimer.m in Sources */,
-				BA558204192FA58E003E643C /* UIView+ZSTFrameAdditions.m in Sources */,
-				BAA9F92C193539A00007DB78 /* UIImage+ZSTCreationAdditions.m in Sources */,
-				BAD1DB5C192D53A400DF8FCE /* NSDictionary+ZSTKeyValueExtensions.m in Sources */,
-				BAA9F913193013870007DB78 /* NSMutableAttributedString+ZSTAdditions.m in Sources */,
 				BAA9F90C192FFDF50007DB78 /* ZSTWildCardGestureTestViewController.m in Sources */,
-				BA5581FF192F66D5003E643C /* NSMutableDictionary+ZSTKeyValueExtensions.m in Sources */,
-				BAA9F8FC192FC0AA0007DB78 /* NSException+ZSTAbstractClassAdditions.m in Sources */,
-				BAAA92CC193B85E7002F09EC /* UIView+ZSTNibAdditions.m in Sources */,
 				BAD1DB3A192D35B100DF8FCE /* ZSTAppDelegate.m in Sources */,
-				BAA9F904192FD9150007DB78 /* ZSTWildcardGestureRecognizer.m in Sources */,
-				BAA9F9181930A7170007DB78 /* NSAttributedString+ZSTCreationAdditions.m in Sources */,
-				BAA9F9221931013F0007DB78 /* UINavigationController+ZSTAdditions.m in Sources */,
-				BAA9F91D1930ECE10007DB78 /* NSString+ZSTValidations.m in Sources */,
 				BAD1DB36192D35B100DF8FCE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
