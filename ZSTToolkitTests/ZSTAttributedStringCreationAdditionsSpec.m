@@ -48,10 +48,11 @@ describe(@"ZSTAttributedStringCreationAdditions", ^{
     });
     
     it(@"should throw exception if mappings are not a kind of dictionary class", ^{
-      [mappings addObject:@[@"World"]]; // Invalid object
+      NSArray *invalidObject = @[@"World"];
+      [mappings addObject:invalidObject]; // Invalid object
       [[theBlock(^{
         [NSAttributedString zst_attributedStringFromTextToAttributesMappings:mappings];
-      }) should] raiseWithName:NSInternalInconsistencyException reason:[NSString stringWithFormat:@"Mappings should be dictionary, got %@", NSStringFromClass([@[] class])]];
+      }) should] raiseWithName:NSInternalInconsistencyException reason:[NSString stringWithFormat:@"Mappings should be dictionary, got %@", NSStringFromClass([invalidObject class])]];
     });
     
     it(@"should throw exception if mappings key is not a kind of string class", ^{

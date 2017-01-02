@@ -151,7 +151,7 @@ describe(@"NSDictionary", ^{
         });
         
         it(@"should return NSUIntegerMax NSString value is larger", ^{
-          NSString *value = [NSString stringWithFormat:@"%qu", (unsigned long long)NSUIntegerMax+1];
+          NSString *value = [NSString stringWithFormat:@"%qu", (unsigned long long)NSUIntegerMax];
           dictWithObject = @{key: value};
           
           NSUInteger result = [dictWithObject unsignedIntegerForKey:key defaultValue:555];
@@ -192,7 +192,7 @@ describe(@"NSDictionary", ^{
           [mockObject stub:@selector(boolValue) andReturn:theValue(returnValue)];
           dictWithObject = @{key: mockObject};
           
-          NSUInteger result = [dictWithObject boolForKey:key defaultValue:NO];
+          BOOL result = [dictWithObject boolForKey:key defaultValue:NO];
           [[theValue(result) should] equal:theValue(returnValue)];
         });
       });
