@@ -36,7 +36,7 @@
   CGContextDrawImage(context, CGRectMake(0, 0, width, height), imageRef);
   CGContextRelease(context);
   
-  int byteIndex = (bytesPerRow * y) + x * bytesPerPixel;
+  unsigned long byteIndex = (bytesPerRow * y) + x * bytesPerPixel;
   
   CGFloat red   = (rawData[byteIndex]     * 1.0) / 255.0;
   CGFloat green = (rawData[byteIndex + 1] * 1.0) / 255.0;
