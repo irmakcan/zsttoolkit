@@ -8,8 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol ZSTJSONObjectInitializationProtocol <NSObject>
 
 - (instancetype)initWithJSONDictionary:(NSDictionary *)json;
 
 @end
+
+NS_ASSUME_NONNULL_END

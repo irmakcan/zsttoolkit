@@ -8,8 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface NSMutableDictionary (ZSTKeyValueExtensions)
 
-- (void)setObjectIfNotNil:(id)object forKey:(id<NSCopying>)key;
+- (void)setObjectIfNotNil:(nullable id)object forKey:(id<NSCopying>)key;
 
 @end
+
+NS_ASSUME_NONNULL_END

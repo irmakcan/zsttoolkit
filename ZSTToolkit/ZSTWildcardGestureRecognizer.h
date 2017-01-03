@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  The block to be called when a touch event occur.
  
@@ -31,10 +33,10 @@ typedef BOOL (^ZSTShouldReceiveTouchInViewBlock)(UITouch *touch, UIView *view);
 + (instancetype)recognizer;
 - (instancetype)init;
 
-- (void)setTouchesBeganCallback:(ZSTTouchesEventBlock)touchesBeganCallback;
-- (void)setTouchesMovedCallback:(ZSTTouchesEventBlock)touchesMovedCallback;
-- (void)setTouchesEndedCallback:(ZSTTouchesEventBlock)touchesEndedCallback;
-- (void)setTouchesCancelledCallback:(ZSTTouchesEventBlock)touchesCancelledCallback;
+- (void)setTouchesBeganCallback:(nullable ZSTTouchesEventBlock)touchesBeganCallback;
+- (void)setTouchesMovedCallback:(nullable ZSTTouchesEventBlock)touchesMovedCallback;
+- (void)setTouchesEndedCallback:(nullable ZSTTouchesEventBlock)touchesEndedCallback;
+- (void)setTouchesCancelledCallback:(nullable ZSTTouchesEventBlock)touchesCancelledCallback;
 
 /**
  Sets ZSTShouldReceiveTouchInViewBlock to determine if the gesture recognizer should receive touch.
@@ -44,6 +46,8 @@ typedef BOOL (^ZSTShouldReceiveTouchInViewBlock)(UITouch *touch, UIView *view);
  
  @param shouldReceiveTouchInViewCallback The block to be used to determine if a gesture recognizer should receive touch.
  */
-- (void)setShouldReceiveTouchInViewCallback:(ZSTShouldReceiveTouchInViewBlock)shouldReceiveTouchInViewCallback;
+- (void)setShouldReceiveTouchInViewCallback:(nullable ZSTShouldReceiveTouchInViewBlock)shouldReceiveTouchInViewCallback;
 
 @end
+
+NS_ASSUME_NONNULL_END

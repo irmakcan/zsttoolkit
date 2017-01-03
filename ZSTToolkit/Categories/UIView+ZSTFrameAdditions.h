@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface UIView (ZSTFrameAdditions)
 
 #pragma mark - Position Helpers
@@ -28,3 +30,5 @@
 @property (nonatomic, assign) CGSize size;
 
 @end
+
+NS_ASSUME_NONNULL_END

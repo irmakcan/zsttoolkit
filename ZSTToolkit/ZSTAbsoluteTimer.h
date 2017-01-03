@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 typedef void (^ZSTAbsoluteTimerCompletion)();
 typedef void (^ZSTAbsoluteTimerUpdateCallback)(NSTimeInterval remainingTime);
 
@@ -32,8 +34,8 @@ typedef void (^ZSTAbsoluteTimerUpdateCallback)(NSTimeInterval remainingTime);
  */
 - (instancetype)initWithEndingDate:(NSDate *)date
                     updateInterval:(NSTimeInterval)updateInterval
-                    updateCallback:(ZSTAbsoluteTimerUpdateCallback)updateCallback
-                        completion:(ZSTAbsoluteTimerCompletion)completion;
+                    updateCallback:(nullable ZSTAbsoluteTimerUpdateCallback)updateCallback
+                        completion:(nullable ZSTAbsoluteTimerCompletion)completion;
 
 /**
  Calls the designated initializer with default update interval of 1.0 seconds.
@@ -47,8 +49,8 @@ typedef void (^ZSTAbsoluteTimerUpdateCallback)(NSTimeInterval remainingTime);
  @return A new ZSTAbsoluteTimer object, configured according to the specified parameters.
  */
 - (instancetype)initWithEndingDate:(NSDate *)date
-                    updateCallback:(ZSTAbsoluteTimerUpdateCallback)updateCallback
-                        completion:(ZSTAbsoluteTimerCompletion)completion;
+                    updateCallback:(nullable ZSTAbsoluteTimerUpdateCallback)updateCallback
+                        completion:(nullable ZSTAbsoluteTimerCompletion)completion;
 
 /**
  Calls the designated initializer with converting the time interval to date.
@@ -64,8 +66,8 @@ typedef void (^ZSTAbsoluteTimerUpdateCallback)(NSTimeInterval remainingTime);
  */
 - (instancetype)initWithTimeInterval:(NSTimeInterval)timeInterval
                       updateInterval:(NSTimeInterval)updateInterval
-                      updateCallback:(ZSTAbsoluteTimerUpdateCallback)updateCallback
-                          completion:(ZSTAbsoluteTimerCompletion)completion;
+                      updateCallback:(nullable ZSTAbsoluteTimerUpdateCallback)updateCallback
+                          completion:(nullable ZSTAbsoluteTimerCompletion)completion;
 
 /**
  Calls the designated initializer with converting the time interval to date and default update interval of 1.0 seconds.
@@ -79,8 +81,8 @@ typedef void (^ZSTAbsoluteTimerUpdateCallback)(NSTimeInterval remainingTime);
  @return A new ZSTAbsoluteTimer object, configured according to the specified parameters.
  */
 - (instancetype)initWithTimeInterval:(NSTimeInterval)timeInterval
-                      updateCallback:(ZSTAbsoluteTimerUpdateCallback)updateCallback
-                          completion:(ZSTAbsoluteTimerCompletion)completion;
+                      updateCallback:(nullable ZSTAbsoluteTimerUpdateCallback)updateCallback
+                          completion:(nullable ZSTAbsoluteTimerCompletion)completion;
 
 /**
  Invalidates the timer and releases the callback blocks.
@@ -88,3 +90,5 @@ typedef void (^ZSTAbsoluteTimerUpdateCallback)(NSTimeInterval remainingTime);
 - (void)invalidate;
 
 @end
+
+NS_ASSUME_NONNULL_END

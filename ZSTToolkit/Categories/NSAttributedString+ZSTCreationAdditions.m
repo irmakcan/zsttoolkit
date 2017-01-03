@@ -11,17 +11,18 @@
 
 @implementation NSAttributedString (ZSTCreationAdditions)
 
-+ (NSAttributedString *)zst_attributedStringFromTextToAttributesMappings:(NSArray *)textToAttributesMappings
++ (NSAttributedString *)zst_attributedStringFromTextToAttributesMappings:(NSArray<NSDictionary<NSString *, NSDictionary<NSString *, id> *> *> *)textToAttributesMappings
 {
   NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:@""];
 
-  for (NSDictionary *textToAttributesMapping in textToAttributesMappings) {
+  for (NSDictionary<NSString *, NSDictionary<NSString *, id> *> *textToAttributesMapping in textToAttributesMappings) {
     if (![textToAttributesMapping isKindOfClass:[NSDictionary class]]) {
       @throw [NSException exceptionWithName:NSInternalInconsistencyException
                                      reason:[NSString stringWithFormat:@"Mappings should be dictionary, got %@", NSStringFromClass([textToAttributesMapping class])]
                                    userInfo:nil];
     }
-    [textToAttributesMapping enumerateKeysAndObjectsUsingBlock:^(NSString *text, NSDictionary *attributes, BOOL *stop) {
+
+    [textToAttributesMapping enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull text, NSDictionary<NSString *, id> * _Nonnull attributes, BOOL * _Nonnull stop) {
       if (![text isKindOfClass:[NSString class]]) {
         @throw [NSException exceptionWithName:NSInternalInconsistencyException
                                        reason:[NSString stringWithFormat:@"Mappings key should be string, got %@", NSStringFromClass([text class])]

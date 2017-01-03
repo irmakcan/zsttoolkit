@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface UIView (ZSTNibAdditions)
 
 /**
@@ -18,7 +20,7 @@
  
  @return Instance of the view of loaded from the nib with receiver class.
  */
-+ (instancetype)viewWithNibOfClass;
++ (nullable instancetype)viewWithNibOfClass;
 
 /**
  Loads the nib from the main bundle with given nib name.
@@ -30,7 +32,7 @@
  
  @return Instance of the view of loaded from the nib with receiver class.
  */
-+ (instancetype)viewWithNibName:(NSString *)nibNameOrNil;
++ (nullable instancetype)viewWithNibName:(nullable NSString *)nibNameOrNil;
 
 /**
  Loads the nib from the bundle with given nib name.
@@ -40,6 +42,8 @@
  
  @return Instance of the view of loaded from the nib with receiver class.
  */
-+ (instancetype)viewWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil;
++ (nullable instancetype)viewWithNibName:(nullable NSString *)nibNameOrNil bundle:(nullable NSBundle *)nibBundleOrNil;
 
 @end
+
+NS_ASSUME_NONNULL_END

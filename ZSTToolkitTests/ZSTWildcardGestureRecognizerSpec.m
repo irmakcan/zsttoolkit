@@ -25,7 +25,7 @@ describe(@"ZSTWildcardGestureRecognizer", ^{
         touchesBeganCalled = YES;
       }];
       
-      [gestureRecognizer touchesBegan:nil withEvent:nil];
+      [gestureRecognizer touchesBegan:[NSSet set] withEvent:[[UIEvent alloc] init]];
       [[theValue(touchesBeganCalled) should] beYes];
     });
   });
@@ -37,7 +37,7 @@ describe(@"ZSTWildcardGestureRecognizer", ^{
         touchesMovedCalled = YES;
       }];
       
-      [gestureRecognizer touchesMoved:nil withEvent:nil];
+      [gestureRecognizer touchesMoved:[NSSet set] withEvent:[[UIEvent alloc] init]];
       [[theValue(touchesMovedCalled) should] beYes];
     });
   });
@@ -48,8 +48,8 @@ describe(@"ZSTWildcardGestureRecognizer", ^{
       [gestureRecognizer setTouchesEndedCallback:^(NSSet *touches, UIEvent *event) {
         touchesEndedCalled = YES;
       }];
-      
-      [gestureRecognizer touchesEnded:nil withEvent:nil];
+
+      [gestureRecognizer touchesEnded:[NSSet set] withEvent:[[UIEvent alloc] init]];
       [[theValue(touchesEndedCalled) should] beYes];
     });
   });
@@ -61,7 +61,7 @@ describe(@"ZSTWildcardGestureRecognizer", ^{
         touchesCancelledCalled = YES;
       }];
       
-      [gestureRecognizer touchesCancelled:nil withEvent:nil];
+      [gestureRecognizer touchesCancelled:[NSSet set] withEvent:[[UIEvent alloc] init]];
       [[theValue(touchesCancelledCalled) should] beYes];
     });
   });
@@ -74,7 +74,7 @@ describe(@"ZSTWildcardGestureRecognizer", ^{
         return YES;
       }];
       
-      [gestureRecognizer touchesBegan:nil withEvent:nil];
+      [gestureRecognizer touchesBegan:[NSSet set] withEvent:[[UIEvent alloc] init]];
       [[theValue(shouldReceiveTouchInViewCalled) should] beYes];
     });
     
@@ -87,7 +87,7 @@ describe(@"ZSTWildcardGestureRecognizer", ^{
       
       it(@"should not change state", ^{
         UIGestureRecognizerState state = gestureRecognizer.state;
-        [gestureRecognizer touchesBegan:nil withEvent:nil];
+        [gestureRecognizer touchesBegan:[NSSet set] withEvent:[[UIEvent alloc] init]];
         [[theValue(gestureRecognizer.state) should] equal:theValue(state)];
       });
       
@@ -97,7 +97,7 @@ describe(@"ZSTWildcardGestureRecognizer", ^{
           touchesBeganCalled = YES;
         }];
         
-        [gestureRecognizer touchesBegan:nil withEvent:nil];
+        [gestureRecognizer touchesBegan:[NSSet set] withEvent:[[UIEvent alloc] init]];
         [[theValue(touchesBeganCalled) should] beYes];
       });
     });
@@ -110,7 +110,7 @@ describe(@"ZSTWildcardGestureRecognizer", ^{
       });
 
       it(@"should set gesture state to UIGestureRecognizerStateEnded", ^{
-        [gestureRecognizer touchesBegan:nil withEvent:nil];
+        [gestureRecognizer touchesBegan:[NSSet set] withEvent:[[UIEvent alloc] init]];
         [[theValue(gestureRecognizer.state) should] equal:theValue(UIGestureRecognizerStateEnded)];
       });
       
@@ -120,7 +120,7 @@ describe(@"ZSTWildcardGestureRecognizer", ^{
           touchesBeganCalled = YES;
         }];
         
-        [gestureRecognizer touchesBegan:nil withEvent:nil];
+        [gestureRecognizer touchesBegan:[NSSet set] withEvent:[[UIEvent alloc] init]];
         [[theValue(touchesBeganCalled) should] beNo];
       });
 

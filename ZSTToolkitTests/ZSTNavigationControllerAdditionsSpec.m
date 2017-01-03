@@ -37,12 +37,6 @@ describe(@"ZSTNavigationControllerAdditions", ^{
       [[navigationController.viewControllers shouldNot] contain:viewControllerToRemove];
     });
     
-    it(@"should not change navigation stack if controller to remove is nil", ^{
-      [[theBlock(^{
-        [navigationController zst_removeControllerFromNavigationStack:nil];
-      }) shouldNot] change:^NSInteger{ return navigationController.viewControllers.count; }];
-    });
-    
     it(@"should not change navigation stack if controller to remove is not in the navigation stack", ^{
       [[theBlock(^{
         UIViewController *otherViewController = [[UIViewController alloc] init];

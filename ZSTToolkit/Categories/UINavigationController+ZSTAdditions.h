@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface UINavigationController (ZSTAdditions)
 
 - (void)zst_removeControllerFromNavigationStack:(UIViewController *)controller;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface NSDictionary (ZSTKeyValueExtensions)
 
 #pragma mark - ObjC Primitive Helpers
@@ -34,21 +36,23 @@
 
 #pragma mark - Object Helpers
 
-- (NSString *)stringForKey:(id)key defaultValue:(NSString *)defaultValue;
+- (NSString *)stringForKey:(id)key defaultValue:(nullable NSString *)defaultValue;
 - (NSString *)stringForKey:(id)key;
 
-- (NSArray *)arrayForKey:(id)key defaultValue:(NSArray *)defaultValue;
+- (NSArray *)arrayForKey:(id)key defaultValue:(nullable NSArray *)defaultValue;
 - (NSArray *)arrayForKey:(id)key;
 
-- (NSDictionary *)dictionaryForKey:(id)key defaultValue:(NSDictionary *)defaultValue;
+- (NSDictionary *)dictionaryForKey:(id)key defaultValue:(nullable NSDictionary *)defaultValue;
 - (NSDictionary *)dictionaryForKey:(id)key;
 
-- (id)jsonObjectForKey:(id)key ofClass:(Class)klas;
+- (nullable id)jsonObjectForKey:(id)key ofClass:(Class)klas;
 - (NSArray *)jsonObjectArrayForKey:(id)key ofClass:(Class)klas;
 
 #pragma mark - Basic Helpers
 
 - (BOOL)hasKey:(id)key;
-- (id)objectForKey:(id)key defaultObject:(id)defaultObject;
+- (id)objectForKey:(id)key defaultObject:(nullable id)defaultObject;
 
 @end
+
+NS_ASSUME_NONNULL_END

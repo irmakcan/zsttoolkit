@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface NSAttributedString (ZSTCreationAdditions)
 
 /**
@@ -23,6 +25,8 @@
  
  @return An NSAttributedString object consisting of the strings with attributes appended with each other.
  */
-+ (NSAttributedString *)zst_attributedStringFromTextToAttributesMappings:(NSArray *)textToAttributesMappings;
++ (NSAttributedString *)zst_attributedStringFromTextToAttributesMappings:(NSArray<NSDictionary<NSString *, NSDictionary<NSString *, id> *> *> *)textToAttributesMappings;
 
 @end
+
+NS_ASSUME_NONNULL_END

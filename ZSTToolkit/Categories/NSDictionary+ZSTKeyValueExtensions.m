@@ -9,6 +9,14 @@
 #import "NSDictionary+ZSTKeyValueExtensions.h"
 #import "ZSTJSONObjectInitializationProtocol.h"
 
+@interface NSDictionary (ZSTKeyValueExtensionsPrivate)
+
+- (NSString *)stringForKey:(id)key defaultValue:(nullable NSString *)defaultValue;
+- (NSArray *)arrayForKey:(id)key defaultValue:(nullable NSArray *)defaultValue;
+- (NSDictionary *)dictionaryForKey:(id)key defaultValue:(nullable NSDictionary *)defaultValue;
+
+@end
+
 @implementation NSDictionary (ZSTKeyValueExtensions)
 
 #pragma mark - ObjC primitive helpers
@@ -225,7 +233,7 @@
   for (NSDictionary *json in jsonArray) {
     [objects addObject:[[klas alloc] initWithJSONDictionary:json]];
   }
-  return objects;
+  return [objects copy];
 }
 
 #pragma mark - Basic helpers

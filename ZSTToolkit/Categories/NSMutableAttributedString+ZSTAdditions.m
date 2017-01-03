@@ -10,7 +10,7 @@
 
 @implementation NSMutableAttributedString (ZSTAdditions)
 
-- (void)zst_appendString:(NSString *)string withAttributes:(NSDictionary *)attributes
+- (void)zst_appendString:(NSString *)string withAttributes:(nullable NSDictionary<NSString *, id> *)attributes
 {
   NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:string attributes:attributes];
   [self appendAttributedString:attributedString];
