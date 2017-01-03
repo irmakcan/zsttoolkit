@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BAD1DB40192D35B200DF8FCE"
+               BuildableName = "ZSTToolkitTests.xctest"
+               BlueprintName = "ZSTToolkitTests"
+               ReferencedContainer = "container:ZSTToolkit.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "4E906F2D1CC983670058BFA5"
+            BuildableName = "ZSTToolkit.framework"
+            BlueprintName = "ZSTToolkit"
+            ReferencedContainer = "container:ZSTToolkit.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
