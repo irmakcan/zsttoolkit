@@ -10,7 +10,7 @@
 
 @implementation NSMutableDictionary (ZSTKeyValueExtensions)
 
-- (void)setObjectIfNotNil:(id)object forKey:(id<NSCopying>)key
+- (void)zst_setObjectIfNotNil:(id)object forKey:(id<NSCopying>)key
 {
   if (object) {
     [self setObject:object forKey:key];

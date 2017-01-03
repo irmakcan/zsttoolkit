@@ -24,13 +24,13 @@ describe(@"NSMutableDictionary", ^{
     it(@"should not call setObject:forKey if the object is nil", ^{
       id object = nil;
       [[dict shouldNot] receive:@selector(setObject:forKey:)];
-      [dict setObjectIfNotNil:object forKey:key];
+      [dict zst_setObjectIfNotNil:object forKey:key];
     });
     
     it(@"should call setObject:forKey if the object is not nil", ^{
       id object = [KWMock mock];
       [[dict should] receive:@selector(setObject:forKey:)];
-      [dict setObjectIfNotNil:object forKey:key];
+      [dict zst_setObjectIfNotNil:object forKey:key];
     });
   });
 });

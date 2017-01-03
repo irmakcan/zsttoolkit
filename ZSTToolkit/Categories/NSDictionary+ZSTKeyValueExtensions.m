@@ -9,18 +9,10 @@
 #import "NSDictionary+ZSTKeyValueExtensions.h"
 #import "ZSTJSONObjectInitializationProtocol.h"
 
-@interface NSDictionary (ZSTKeyValueExtensionsPrivate)
-
-- (NSString *)stringForKey:(id)key defaultValue:(nullable NSString *)defaultValue;
-- (NSArray *)arrayForKey:(id)key defaultValue:(nullable NSArray *)defaultValue;
-- (NSDictionary *)dictionaryForKey:(id)key defaultValue:(nullable NSDictionary *)defaultValue;
-
-@end
-
 @implementation NSDictionary (ZSTKeyValueExtensions)
 
 #pragma mark - ObjC primitive helpers
-- (NSInteger)integerForKey:(id)key defaultValue:(NSInteger)defaultValue
+- (NSInteger)zst_integerForKey:(id)key defaultValue:(NSInteger)defaultValue
 {
   id value = [self objectForKey:key];
   if ([value isKindOfClass:[NSString class]]) {
@@ -37,12 +29,12 @@
   return defaultValue;
 }
 
-- (NSInteger)integerForKey:(id)key
+- (NSInteger)zst_integerForKey:(id)key
 {
-  return [self integerForKey:key defaultValue:0];
+  return [self zst_integerForKey:key defaultValue:0];
 }
 
-- (NSUInteger)unsignedIntegerForKey:(id)key defaultValue:(NSUInteger)defaultValue
+- (NSUInteger)zst_unsignedIntegerForKey:(id)key defaultValue:(NSUInteger)defaultValue
 {
 	id value = [self objectForKey:key];
   
@@ -66,12 +58,12 @@
   return defaultValue;
 }
 
-- (NSUInteger)unsignedIntegerForKey:(id)key
+- (NSUInteger)zst_unsignedIntegerForKey:(id)key
 {
-  return [self unsignedIntegerForKey:key defaultValue:0];
+  return [self zst_unsignedIntegerForKey:key defaultValue:0];
 }
 
-- (BOOL)boolForKey:(id)key defaultValue:(BOOL)defaultValue
+- (BOOL)zst_boolForKey:(id)key defaultValue:(BOOL)defaultValue
 {
   id value = [self objectForKey:key];
   if ([value respondsToSelector:@selector(boolValue)]) {
@@ -80,14 +72,14 @@
   return defaultValue;
 }
 
-- (BOOL)boolForKey:(id)key
+- (BOOL)zst_boolForKey:(id)key
 {
-  return [self boolForKey:key defaultValue:NO];
+  return [self zst_boolForKey:key defaultValue:NO];
 }
 
 #pragma mark - Primitive helpers
 
-- (float)floatForKey:(id)key defaultValue:(float)defaultValue
+- (float)zst_floatForKey:(id)key defaultValue:(float)defaultValue
 {
   id value = [self objectForKey:key];
   if ([value isKindOfClass:[NSString class]]) {
@@ -104,12 +96,12 @@
   return defaultValue;
 }
 
-- (float)floatForKey:(id)key
+- (float)zst_floatForKey:(id)key
 {
-  return [self floatForKey:key defaultValue:0.0f];
+  return [self zst_floatForKey:key defaultValue:0.0f];
 }
 
-- (double)doubleForKey:(id)key defaultValue:(double)defaultValue
+- (double)zst_doubleForKey:(id)key defaultValue:(double)defaultValue
 {
   id value = [self objectForKey:key];
   if ([value isKindOfClass:[NSString class]]) {
@@ -126,12 +118,12 @@
   return defaultValue;
 }
 
-- (double)doubleForKey:(id)key
+- (double)zst_doubleForKey:(id)key
 {
-  return [self doubleForKey:key defaultValue:0.0];
+  return [self zst_doubleForKey:key defaultValue:0.0];
 }
 
-- (unsigned long long int)unsignedLongLongForKey:(id)key defaultValue:(unsigned long long int)defaultValue
+- (unsigned long long int)zst_unsignedLongLongForKey:(id)key defaultValue:(unsigned long long int)defaultValue
 {
   id value = [self objectForKey:key];
   
@@ -149,14 +141,14 @@
   return defaultValue;
 }
 
-- (unsigned long long int)unsignedLongLongForKey:(id)key
+- (unsigned long long int)zst_unsignedLongLongForKey:(id)key
 {
-  return [self unsignedLongLongForKey:key defaultValue:0ULL];
+  return [self zst_unsignedLongLongForKey:key defaultValue:0ULL];
 }
 
 #pragma mark - Object helpers
 
-- (NSString *)stringForKey:(id)key defaultValue:(NSString *)defaultValue
+- (NSString *)zst_stringForKey:(id)key defaultValue:(NSString *)defaultValue
 {
   id string = [self objectForKey:key];
   if ([string isKindOfClass:[NSString class]]) {
@@ -168,12 +160,12 @@
   return defaultValue;
 }
 
-- (NSString *)stringForKey:(id)key
+- (NSString *)zst_stringForKey:(id)key
 {
-  return [self stringForKey:key defaultValue:nil];
+  return [self zst_stringForKey:key defaultValue:nil];
 }
 
-- (NSArray *)arrayForKey:(id)key defaultValue:(NSArray *)defaultValue
+- (NSArray *)zst_arrayForKey:(id)key defaultValue:(NSArray *)defaultValue
 {
   id array = [self objectForKey:key];
 	if ([array isKindOfClass:[NSArray class]]) {
@@ -182,12 +174,12 @@
   return defaultValue;
 }
 
-- (NSArray *)arrayForKey:(id)key
+- (NSArray *)zst_arrayForKey:(id)key
 {
-	return [self arrayForKey:key defaultValue:nil];
+	return [self zst_arrayForKey:key defaultValue:nil];
 }
 
-- (NSDictionary *)dictionaryForKey:(id)key defaultValue:(NSDictionary *)defaultValue
+- (NSDictionary *)zst_dictionaryForKey:(id)key defaultValue:(NSDictionary *)defaultValue
 {
   id dict = [self objectForKey:key];
 	if ([dict isKindOfClass:[NSDictionary class]]) {
@@ -196,12 +188,12 @@
   return defaultValue;
 }
 
-- (NSDictionary *)dictionaryForKey:(id)key
+- (NSDictionary *)zst_dictionaryForKey:(id)key
 {
-	return [self dictionaryForKey:key defaultValue:nil];
+	return [self zst_dictionaryForKey:key defaultValue:nil];
 }
 
-- (id)jsonObjectForKey:(id)key ofClass:(Class)klas
+- (id)zst_jsonObjectForKey:(id)key ofClass:(Class)klas
 {
   if (![klas conformsToProtocol:@protocol(ZSTJSONObjectInitializationProtocol)]) {
     @throw([NSException exceptionWithName:NSInternalInconsistencyException
@@ -211,14 +203,14 @@
                                  userInfo:nil]);
   }
   
-  NSDictionary *json = [self dictionaryForKey:key];
+  NSDictionary *json = [self zst_dictionaryForKey:key];
 	if (json) {
     return [[klas alloc] initWithJSONDictionary:json];
   }
   return nil;
 }
 
-- (NSArray *)jsonObjectArrayForKey:(id)key ofClass:(Class)klas
+- (NSArray *)zst_jsonObjectArrayForKey:(id)key ofClass:(Class)klas
 {
   if (![klas conformsToProtocol:@protocol(ZSTJSONObjectInitializationProtocol)]) {
     @throw([NSException exceptionWithName:NSInternalInconsistencyException
@@ -229,7 +221,7 @@
   }
   
   NSMutableArray *objects = [NSMutableArray array];
-  NSArray *jsonArray = [self arrayForKey:key];
+  NSArray *jsonArray = [self zst_arrayForKey:key];
   for (NSDictionary *json in jsonArray) {
     [objects addObject:[[klas alloc] initWithJSONDictionary:json]];
   }
@@ -238,7 +230,7 @@
 
 #pragma mark - Basic helpers
 
-- (id)objectForKey:(id)key defaultObject:(id)defaultObject
+- (id)zst_objectForKey:(id)key defaultObject:(id)defaultObject
 {
   id object = [self objectForKey:key];
   if (object) {
@@ -247,7 +239,7 @@
   return defaultObject;
 }
 
-- (BOOL)hasKey:(id)key
+- (BOOL)zst_hasKey:(id)key
 {
 	return ([self objectForKey:key] != nil);
 }

@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @return Instance of the view of loaded from the nib with receiver class.
  */
-+ (nullable instancetype)viewWithNibOfClass;
++ (nullable instancetype)zst_viewWithNibOfClass;
 
 /**
  Loads the nib from the main bundle with given nib name.
@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @return Instance of the view of loaded from the nib with receiver class.
  */
-+ (nullable instancetype)viewWithNibName:(nullable NSString *)nibNameOrNil;
++ (nullable instancetype)zst_viewWithNibName:(nullable NSString *)nibNameOrNil;
 
 /**
  Loads the nib from the bundle with given nib name.
@@ -42,7 +42,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @return Instance of the view of loaded from the nib with receiver class.
  */
-+ (nullable instancetype)viewWithNibName:(nullable NSString *)nibNameOrNil bundle:(nullable NSBundle *)nibBundleOrNil;
++ (nullable instancetype)zst_viewWithNibName:(nullable NSString *)nibNameOrNil bundle:(nullable NSBundle *)nibBundleOrNil;
 
 @end
 

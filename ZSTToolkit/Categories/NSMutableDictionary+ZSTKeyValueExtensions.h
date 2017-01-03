@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSMutableDictionary (ZSTKeyValueExtensions)
 
-- (void)setObjectIfNotNil:(nullable id)object forKey:(id<NSCopying>)key;
+- (void)zst_setObjectIfNotNil:(nullable id)object forKey:(id<NSCopying>)key;
 
 @end
 

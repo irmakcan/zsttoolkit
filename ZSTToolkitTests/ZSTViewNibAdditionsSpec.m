@@ -16,14 +16,14 @@ SPEC_BEGIN(ZSTViewNibAdditionsSpec)
 describe(@"ZSTViewNibAdditions", ^{
   describe(@"viewWithNibOfClass", ^{
     it(@"should return view with calling class", ^{
-      UIView *view = [ZSTNibTestView viewWithNibOfClass];
+      UIView *view = [ZSTNibTestView zst_viewWithNibOfClass];
       [[view should] beKindOfClass:[ZSTNibTestView class]];
     });
   });
   
   describe(@"viewWithNibName:", ^{
     it(@"should return the view in a nib", ^{
-      UIView *view = [ZSTNibTestOtherView viewWithNibName:@"ZSTNibTestView"];
+      UIView *view = [ZSTNibTestOtherView zst_viewWithNibName:@"ZSTNibTestView"];
       [[view should] beKindOfClass:[ZSTNibTestOtherView class]];
     });
   });
@@ -32,7 +32,7 @@ describe(@"ZSTViewNibAdditions", ^{
     it(@"should call loadNibNamed:owner:options: on bundle", ^{
       NSBundle *bundle = [NSBundle mainBundle];
       [[bundle should] receive:@selector(loadNibNamed:owner:options:) withArguments:@"nibName", nil, nil];
-      [UIView viewWithNibName:@"nibName" bundle:bundle];
+      [UIView zst_viewWithNibName:@"nibName" bundle:bundle];
     });
   });
 });

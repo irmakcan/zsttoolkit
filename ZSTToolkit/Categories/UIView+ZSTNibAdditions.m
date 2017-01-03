@@ -10,17 +10,17 @@
 
 @implementation UIView (ZSTNibAdditions)
 
-+ (instancetype)viewWithNibOfClass
++ (instancetype)zst_viewWithNibOfClass
 {
-  return [self viewWithNibName:nil];
+  return [self zst_viewWithNibName:nil];
 }
 
-+ (instancetype)viewWithNibName:(NSString *)nibNameOrNil
++ (instancetype)zst_viewWithNibName:(NSString *)nibNameOrNil
 {
-  return [self viewWithNibName:nibNameOrNil bundle:nil];
+  return [self zst_viewWithNibName:nibNameOrNil bundle:nil];
 }
 
-+ (instancetype)viewWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
++ (instancetype)zst_viewWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
   NSBundle *bundle = nibBundleOrNil;
   if (!bundle) {

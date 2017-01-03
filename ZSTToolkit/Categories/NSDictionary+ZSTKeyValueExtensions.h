@@ -14,44 +14,44 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - ObjC Primitive Helpers
 
-- (NSInteger)integerForKey:(id)key defaultValue:(NSInteger)defaultValue;
-- (NSInteger)integerForKey:(id)key;
+- (NSInteger)zst_integerForKey:(id)key defaultValue:(NSInteger)defaultValue;
+- (NSInteger)zst_integerForKey:(id)key;
 
-- (NSUInteger)unsignedIntegerForKey:(id)key defaultValue:(NSUInteger)defaultValue;
-- (NSUInteger)unsignedIntegerForKey:(id)key;
+- (NSUInteger)zst_unsignedIntegerForKey:(id)key defaultValue:(NSUInteger)defaultValue;
+- (NSUInteger)zst_unsignedIntegerForKey:(id)key;
 
-- (BOOL)boolForKey:(id)key defaultValue:(BOOL)defaultValue;
-- (BOOL)boolForKey:(id)key;
+- (BOOL)zst_boolForKey:(id)key defaultValue:(BOOL)defaultValue;
+- (BOOL)zst_boolForKey:(id)key;
 
 #pragma mark - Primitive Helpers
 
-- (float)floatForKey:(id)key defaultValue:(float)defaultValue;
-- (float)floatForKey:(id)key;
+- (float)zst_floatForKey:(id)key defaultValue:(float)defaultValue;
+- (float)zst_floatForKey:(id)key;
 
-- (double)doubleForKey:(id)key defaultValue:(double)defaultValue;
-- (double)doubleForKey:(id)key;
+- (double)zst_doubleForKey:(id)key defaultValue:(double)defaultValue;
+- (double)zst_doubleForKey:(id)key;
 
-- (unsigned long long int)unsignedLongLongForKey:(id)key defaultValue:(unsigned long long int)defaultValue;
-- (unsigned long long int)unsignedLongLongForKey:(id)key;
+- (unsigned long long int)zst_unsignedLongLongForKey:(id)key defaultValue:(unsigned long long int)defaultValue;
+- (unsigned long long int)zst_unsignedLongLongForKey:(id)key;
 
 #pragma mark - Object Helpers
 
-- (NSString *)stringForKey:(id)key defaultValue:(nullable NSString *)defaultValue;
-- (NSString *)stringForKey:(id)key;
+- (NSString *)zst_stringForKey:(id)key defaultValue:(nullable NSString *)defaultValue;
+- (NSString *)zst_stringForKey:(id)key;
 
-- (NSArray *)arrayForKey:(id)key defaultValue:(nullable NSArray *)defaultValue;
-- (NSArray *)arrayForKey:(id)key;
+- (NSArray *)zst_arrayForKey:(id)key defaultValue:(nullable NSArray *)defaultValue;
+- (NSArray *)zst_arrayForKey:(id)key;
 
-- (NSDictionary *)dictionaryForKey:(id)key defaultValue:(nullable NSDictionary *)defaultValue;
-- (NSDictionary *)dictionaryForKey:(id)key;
+- (NSDictionary *)zst_dictionaryForKey:(id)key defaultValue:(nullable NSDictionary *)defaultValue;
+- (NSDictionary *)zst_dictionaryForKey:(id)key;
 
-- (nullable id)jsonObjectForKey:(id)key ofClass:(Class)klas;
-- (NSArray *)jsonObjectArrayForKey:(id)key ofClass:(Class)klas;
+- (nullable id)zst_jsonObjectForKey:(id)key ofClass:(Class)klas;
+- (NSArray *)zst_jsonObjectArrayForKey:(id)key ofClass:(Class)klas;
 
 #pragma mark - Basic Helpers
 
-- (BOOL)hasKey:(id)key;
-- (id)objectForKey:(id)key defaultObject:(nullable id)defaultObject;
+- (BOOL)zst_hasKey:(id)key;
+- (id)zst_objectForKey:(id)key defaultObject:(nullable id)defaultObject;
 
 @end
 
