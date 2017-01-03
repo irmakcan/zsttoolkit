@@ -5,6 +5,8 @@
 //  Created by Irmak Ozsut on 22/04/16.
 //  Copyright © 2016 Irmak Can Ozsut. All rights reserved.
 //
+//  v0.0.4
+//
 
 #import <UIKit/UIKit.h>
 
