@@ -150,8 +150,8 @@ describe(@"NSDictionary", ^{
           [[theValue(result) should] equal:theValue(defaultValue)];
         });
         
-        it(@"should return NSUIntegerMax NSString value is larger", ^{
-          NSString *value = [NSString stringWithFormat:@"%qu", (unsigned long long)NSUIntegerMax];
+        it(@"should return NSUIntegerMax if NSString value is larger", ^{
+          NSString *value = @"18446744073709551618";
           dictWithObject = @{key: value};
           
           NSUInteger result = [dictWithObject zst_unsignedIntegerForKey:key defaultValue:555];
