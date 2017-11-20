@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void (^ZSTAbsoluteTimerCompletion)();
+typedef void (^ZSTAbsoluteTimerCompletion)(void);
 typedef void (^ZSTAbsoluteTimerUpdateCallback)(NSTimeInterval remainingTime);
 
 /**

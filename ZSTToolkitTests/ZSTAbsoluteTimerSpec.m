@@ -22,20 +22,22 @@ describe(@"ZSTAbsoluteTimer", ^{
     it(@"should create an instance of ZSTAbsoluteTimer and calls callbacks with correct number of times", ^{
       __block BOOL completionCalled = NO;
       __block NSInteger numberOfUpdateCalls = 0;
-      NSTimeInterval endingTime = 0.5;
-      NSTimeInterval updateInterval = 0.1;
+      NSTimeInterval endingTime = 0.9;
+      NSTimeInterval updateInterval = 0.3;
       NSDate *endingDate = [[NSDate date] dateByAddingTimeInterval:endingTime];
 
       timer = [[ZSTAbsoluteTimer alloc] initWithEndingDate:endingDate updateInterval:updateInterval updateCallback:^(NSTimeInterval remainingTime) {
+        NSLog(@"update called!!!! %.4f", remainingTime);
         numberOfUpdateCalls++;
       } completion:^{
+        NSLog(@"completion called!!!!");
         completionCalled = YES;
       }];
       
       [[timer shouldNot] beNil];
       
-      NSInteger numberOfTimesShouldBeCalled = endingTime/updateInterval;
-      [[expectFutureValue(theValue(numberOfUpdateCalls)) shouldEventually] equal:theValue(numberOfTimesShouldBeCalled)];
+      NSInteger numberOfTimesShouldBeCalled = (NSInteger)round(endingTime/updateInterval);
+      [[expectFutureValue(theValue(numberOfUpdateCalls)) shouldEventuallyBeforeTimingOutAfter(endingTime+updateInterval)] equal:theValue(numberOfTimesShouldBeCalled)];
       [[expectFutureValue(theValue(completionCalled)) shouldEventually] beYes];
     });
     
