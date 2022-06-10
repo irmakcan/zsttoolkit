@@ -80,16 +80,16 @@
 	self.frame = frame;
 }
 
-- (CGPoint)position
+- (CGPoint)zst_position
 {
 	return self.frame.origin;
 }
 
-- (void)setPosition:(CGPoint)position
+- (void)setZst_position:(CGPoint)position
 {
-	CGRect frame = self.frame;
-	frame.origin = position;
-	[self setFrame:frame];
+  CGRect frame = self.frame;
+  frame.origin = position;
+  [self setFrame:frame];
 }
 
 #pragma mark - Size Helpers

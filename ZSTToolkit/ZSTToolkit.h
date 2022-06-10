@@ -13,8 +13,8 @@
 FOUNDATION_EXPORT double ZSTToolkitVersionNumber;
 FOUNDATION_EXPORT const unsigned char ZSTToolkitVersionString[];
 
-#import "ZSTCategories.h"
-#import "ZSTAbsoluteTimer.h"
-#import "ZSTJSONObjectInitializationProtocol.h"
-#import "ZSTRGB.h"
-#import "ZSTWildcardGestureRecognizer.h"
+#import <ZSTToolkit/ZSTCategories.h>
+#import <ZSTToolkit/ZSTAbsoluteTimer.h>
+#import <ZSTToolkit/ZSTJSONObjectInitializationProtocol.h>
+#import <ZSTToolkit/ZSTRGB.h>
+#import <ZSTToolkit/ZSTWildcardGestureRecognizer.h>

@@ -8,13 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-#import "NSAttributedString+ZSTCreationAdditions.h"
-#import "NSDictionary+ZSTKeyValueExtensions.h"
-#import "NSException+ZSTAbstractClassAdditions.h"
-#import "NSMutableAttributedString+ZSTAdditions.h"
-#import "NSMutableDictionary+ZSTKeyValueExtensions.h"
-#import "NSString+ZSTValidations.h"
-#import "UIImage+ZSTCreationAdditions.h"
-#import "UINavigationController+ZSTAdditions.h"
-#import "UIView+ZSTFrameAdditions.h"
-#import "UIView+ZSTNibAdditions.h"
+#import <ZSTToolkit/NSAttributedString+ZSTCreationAdditions.h>
+#import <ZSTToolkit/NSDictionary+ZSTKeyValueExtensions.h>
+#import <ZSTToolkit/NSException+ZSTAbstractClassAdditions.h>
+#import <ZSTToolkit/NSMutableAttributedString+ZSTAdditions.h>
+#import <ZSTToolkit/NSMutableDictionary+ZSTKeyValueExtensions.h>
+#import <ZSTToolkit/NSString+ZSTValidations.h>
+#import <ZSTToolkit/UIImage+ZSTCreationAdditions.h>
+#import <ZSTToolkit/UINavigationController+ZSTAdditions.h>
+#import <ZSTToolkit/UIView+ZSTFrameAdditions.h>
+#import <ZSTToolkit/UIView+ZSTNibAdditions.h>

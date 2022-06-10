@@ -121,23 +121,23 @@ describe(@"ZSTViewFrameAdditions", ^{
       });
     });
     
-    describe(@"position", ^{
+    describe(@"zst_position", ^{
       it(@"should return origin of the view", ^{
-        [[theValue(view.position) should] equal:theValue(ZSTSpecViewFrame.origin)];
+        [[theValue(view.zst_position) should] equal:theValue(ZSTSpecViewFrame.origin)];
       });
     });
     
-    describe(@"setPosition:", ^{
+    describe(@"setZst_position:", ^{
       it(@"should not change frame size", ^{
         CGSize oldViewSize = view.frame.size;
-        view.position = CGPointMake(420.f, 420.f);
+        view.zst_position = CGPointMake(420.f, 420.f);
         CGSize newViewSize = view.frame.size;
         [[theValue(oldViewSize) should] equal:theValue(newViewSize)];
       });
       
       it(@"should set position of the view", ^{
         CGPoint newPosition = CGPointMake(520.f, 520.f);
-        view.position = newPosition;
+        view.zst_position = newPosition;
         [[theValue(view.frame.origin) should] equal:theValue(newPosition)];
       });
     });

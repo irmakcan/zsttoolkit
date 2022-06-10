@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGFloat right;
 @property (nonatomic, assign) CGFloat bottom;
 
-@property (nonatomic, assign) CGPoint position;
+@property (nonatomic, assign) CGPoint zst_position;
 
 #pragma mark - Size Helpers
 @property (nonatomic, assign) CGFloat width;
