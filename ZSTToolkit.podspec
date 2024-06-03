@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "ZSTToolkit"
-  s.version      = "0.0.2"
+  s.version      = "0.0.9"
   s.summary      = "A set of classes/categories to make your iOS life easier."
 
   s.description  = %{
@@ -11,13 +11,13 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/irmakcan/ZSTToolkit"
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
-  
+
   s.authors            = { "Irmak Can Ozsut" => "irmakcan@irmakcan.com" }
   s.social_media_url   = "http://twitter.com/irmakcanozsut"
 
-  s.platform     = :ios, "6.0"
+  s.platform     = :ios, "12.0"
   s.requires_arc = true
-  s.source       = { :git => "https://github.com/irmakcan/ZSTToolkit.git", :tag => "v#{s.version}" }
+  s.source       = { :git => "https://github.com/irmakcan/ZSTToolkit.git", :tag => s.version.to_s }
   s.source_files  = "ZSTToolkit/**/*.{h,m}"
 
   s.ios.frameworks = 'Foundation', 'UIKit', 'CoreGraphics'
